@@ -11,10 +11,11 @@
     overflow: auto;
 }
 
-.header {
+.Index {
     display: flex;
     align-items: center;
     height: 100px;
+    border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -53,7 +54,7 @@
 .search {
     display: flex;
     border: 1px solid #e6e6e6;
-    border-radius: 3px 0px 0px 3px;
+    border-radius: 3px 3px 3px 3px;
     margin-left: 37px;
 }
 
@@ -80,11 +81,12 @@
     width: 280px;
     background-color: #ffffff;
     border: 1px solid #e6e6e6;
-    border-radius: 0px 3px 3px 0px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .search>.lupa {
+    display: block;
     height: 38px;
     width: 36px;
     background-color: #ffffff;
@@ -98,6 +100,12 @@
     padding-top: 11px;
 }
 
+.search>a:hover {
+    border: 1px solid #cac6c6;
+    transition: 0.5s;
+    box-shadow: 0px 0px 2px 0px #000000;
+}
+
 .basket {
     margin-left: 319px;
 }
@@ -107,7 +115,6 @@
     width: 130px;
     background-color: #f16d7f;
     margin-left: 26Px;
-
 }
 
 .button>a {
@@ -122,9 +129,16 @@
     text-align: center;
 }
 
+.button:hover {
+    transition: 0.5s;
+    background-color: #f35466;
+    box-shadow: 0px 0px 2px 0px #000000;
+}
+
 .menu {
     width: 680px;
     margin-left: 200px;
+    border-bottom: #9f9f9f;
 }
 
 .menu_list {
@@ -141,6 +155,11 @@
     color: #222222;
     line-height: 26px;
     text-transform: uppercase
+}
+
+.menu_elements>a:hover {
+    transition: 0.5s;
+    color: #9c9c9c;
 }
 
 .promo {
@@ -275,19 +294,19 @@
     line-height: 54px;
     margin: 0 auto;
     margin-top: -15px;
+    margin-bottom: 60px;
 }
 
-.goodsBox {
-    height: 752px;
+.Product_Box {
     width: 1139px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 60px;
 }
 
-.goods {
+.Product {
+    position: relative;
     height: 379px;
     width: 261px;
     display: flex;
@@ -295,31 +314,24 @@
     margin-bottom: 31px;
 }
 
-.imgfon {
+.Product:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+    transition: 0.2s;
+}
+
+.Product:hover .Product_Pic {
+    filter: brightness(30%);
+    transition: 0.2s;
+}
+
+.Product:hover .addTo {
     display: flex;
-    background-image: url(img/hover.png);
-    z-index: 2;
-    position: absolute;
-    opacity: 0;
-    height: 280px;
-    width: 261px;
-    border: none;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.goods:hover .imgfon {
-    opacity: 0.99;
-
-}
-
-.goods:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
 }
 
 .addTo {
-    display: flex;
+    position: absolute;
+    display: none;
     height: 39px;
     width: 123px;
     font-family: 'Lato';
@@ -328,50 +340,48 @@
     color: #ffffff;
     border: 1px solid white;
     align-items: center;
-    margin-top: -50px;
-}
-
-.addTo>img {
-    margin: 8px;
-}
-
-.goods>img {
-    z-index: 0;
-    height: 280px;
-    width: 261px;
-}
-
-.goodslink {
+    margin-top: 97px;
+    margin-left: 70px;
     text-decoration: none;
 }
 
-.discription {
-    height: 11px;
-    width: 157px;
+.addTo>img {
+    margin-left: 12px;
+    margin-right: 8px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.addTo:hover {
+    box-shadow: 0px 1px 3px 1px #f7f5f5a1;
+    transition: 0.2s;
+}
+
+.Product_Discription {
+    text-decoration: none;
+    margin: 14px;
+}
+
+.productname {
     font-family: 'Lato';
     font-size: 13px;
     color: #222222;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
-    padding-left: 14px;
-    padding-top: 19px;
-    padding-bottom: 17px;
 }
 
 .price {
-    height: 15px;
-    width: 50px;
     font-family: 'Lato';
     font-size: 16px;
     font-weight: bold;
     color: #f16d7f;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
-    padding-left: 14px;
-    padding-bottom: 29px;
+    margin-top: 17px;
 }
 
 .button2 {
+    display: block;
     height: 48px;
     width: 212px;
     background-color: #f16d7f;
