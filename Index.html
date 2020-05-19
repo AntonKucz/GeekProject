@@ -7,6 +7,7 @@
     <title>The Brand</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/0e08f026fe.js"></script>
 </head>
 
 <body>
@@ -43,8 +44,6 @@
     <div class="PromoBox_1">
 
         <div class="PromoText center">
-            <div class="pinkline"></div>
-
             <span class="Brand">
                 THE BRAND
             </span>
@@ -214,12 +213,17 @@
         <div class="Subscribe_right">
             <p>Subscribe</p>
             <span FOR_OUR>FOR OUR NEWLETTER AND PROMOTION</span>
-            <div class="form_for_email">
-                <input type="email" placeholder="Enter Your Email">
-                <a class="button3" href="">Subscribe</a>
-            </div>
+            <form action="">
+                <div class="form_for_email">
+                    <input class="email" type="email"
+                        pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required
+                        placeholder="Enter Your Email">
+                    <input class="button3" type="submit" value="Subscribe">
+            </form>
 
         </div>
+
+    </div>
     </div>
     <footer>
         <div class="footer_top">
@@ -278,22 +282,22 @@
             </div>
         </div>
         <div class="Footer_down">
-            <p class="CopyRight">© 2017 Brand All Rights Reserved.</p>
+            <p class="CopyRight">© 2020 Brand All Rights Reserved.</p>
             <div class="social">
                 <a href="#">
-                    <div class="social_block"><img src="img/FBicon.png" alt=""></div>
+                    <div class="social_block"><i class="fa fa-facebook" aria-hidden="true"></i></div>
                 </a>
                 <a href="#">
-                    <div class="social_block"><img src="img/TW.webp" width="18px" height="18px" alt=""></div>
+                    <div class="social_block"><i class="fa fa-twitter" aria-hidden="true"></i></div>
                 </a>
                 <a href="#">
-                    <div class="social_block"><img src="img/LDicon.png" alt=""></div>
+                    <div class="social_block"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
                 </a>
                 <a href="#">
-                    <div class="social_block"><img src="img/Picon.png" alt=""></div>
+                    <div class="social_block"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
                 </a>
                 <a href="#">
-                    <div class="social_block"><img src="img/Gicon.png" alt=""></div>
+                    <div class="social_block"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
                 </a>
             </div>
         </div>
