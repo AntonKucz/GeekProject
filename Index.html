@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Brand</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100300400700900&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/0e08f026fe.js"></script>
     <script src="https://use.fontawesome.com/cf52e0f738.js"></script>
 
 </head>
 
 <body>
-    <header class="Index center">
+    <header class="Header center">
         <div class="logo">
-            <a href="#"><img src="img/logo.png" height="51px" width="59px" alt="Логотип"></a>
-            <a href="#">
-                <p>BRAN<span class="RedLetter">D</span></p>
+            <a class="Logo_link" href="#"><img src="img/logo.png" height="51px" width="59px" alt="Логотип"></a>
+            <a class="Brand_link" href="#">
+                <p class="Brand_text">BRAN<span class="RedLetter">D</span></p>
             </a>
         </div>
         <div class="search">
@@ -145,9 +145,9 @@
     </header>
     <nav class="menu center">
         <ul class="menu_list">
-            <li class="menu_elements"><a class="menu_active_link" href="#">Home </a></li>
+            <li class="menu_elements"><a class="menu_active_link" href="Index.html">Home </a></li>
             <li class="menu_elements">
-                <a href="Product.html">Man</a>
+                <a class="" href="Product.html">Man</a>
                 <div class="drop">
                     <div class="drop_flex">
                         <h3 class="drop_h3">Man</h3>
@@ -186,11 +186,12 @@
                             <li><a href="" class="drop_a">Leggings/Pants </a></li>
                             <li><a href="" class="drop_a">Shoes Beauty </a></li>
                         </ul>
-                        <img src="img/collman.png" alt="">
+                        <a class="image_link" href=""><div class="image_box">Super<br>Sale!</div></a>
+                                  
                     </div>
                 </div>
             </li>
-            <li class="menu_elements"><a href="#">Women</a></li>
+            <li class="menu_elements"><a href="">Women</a></li>
             <li class="menu_elements"><a href="#">Kids</a></li>
             <li class="menu_elements"><a href="#">Accoseriese</a></li>
             <li class="menu_elements"><a href="#">Featured</a></li>
@@ -302,10 +303,10 @@
                 </a>
             </article>
         </section>
-        <div class="button2"><a href="#">Browse All Product&nbsp;&rarr;</a>
+        <div class="button2"><a href="#">Browse All Product &rarr;</a>
         </div>
     </div>
-    <div class="PromoBox_2 center">
+    <div class="PromoBox_2 center">    
         <a class="Link_on_PromoBox_2" href="">
             <div class="Offer">30% <span class="redT">OFFER</span> <span class="FWT">FOR WOMEN</span> </div>
             <img src="img/PromoBlock2.png" width="767px" height="529px" alt="">
@@ -337,6 +338,7 @@
                 </div>
             </div>
         </a>
+   
     </div>
     <div class="Subscribe_Block">
         <div class="Subscribe_left">
@@ -372,7 +374,7 @@
             <form action="">
                 <div class="form_for_email">
                     <input class="email" type="email"
-                        pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required
+                        pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'|~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required
                         placeholder="Enter Your Email">
                     <input class="button3" type="submit" value="Subscribe">
             </form>
@@ -385,11 +387,10 @@
         <div class="footer_top">
             <div class="footer_text">
                 <div class="logo">
-                    <a href="#"><img src="img/logo.png" height="51px" width="59px" alt="Логотип"></a>
-                    <a href="#">
-                        <p>BRAN<span class="RedLetter">D</span></p>
+                    <a class="Logo_link" href="#"><img src="img/logo.png" height="51px" width="59px" alt="Логотип"></a>
+                    <a class="Brand_link" href="#">
+                        <p class="Brand_text">BRAN<span class="RedLetter">D</span></p>
                     </a>
-
                 </div>
                 <div class="footer_text_text">
                     <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally
@@ -404,10 +405,10 @@
             </div>
             <div class="footer_menu">
                 <ul class="footer_menu_ul">
-                    <li class="footer_li_1"><a href="#">COMPANY</a>
+                    <li class="footer_li_1"><a href="Index.html">COMPANY</a>
                         <ul>
-                            <li class="footer_li_2"><a href="#">Home</a></li>
-                            <li class="footer_li_2"><a href="#">Shop</a></li>
+                            <li class="footer_li_2"><a href="Index.html">Home</a></li>
+                            <li class="footer_li_2"><a href="Product.html">Shop</a></li>
                             <li class="footer_li_2"><a href="#">About</a></li>
                             <li class="footer_li_2"><a href="#">How It Works</a></li>
                             <li class="footer_li_2"><a href="#">Contact</a></li>
@@ -426,7 +427,7 @@
 
                     <li class="footer_li_1"><a href="#">SHOP CATEGORY</a>
                         <ul>
-                            <li class="footer_li_2"><a href="#">Men</a></li>
+                            <li class="footer_li_2"><a href="Product.html">Men</a></li>
                             <li class="footer_li_2"><a href="#">Women</a></li>
                             <li class="footer_li_2"><a href="#">Child</a></li>
                             <li class="footer_li_2"><a href="#">Apparel</a></li>
