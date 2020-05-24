@@ -1,4 +1,3 @@
-        
 $C-pinc: #f16d7f
 
 .body 
@@ -376,6 +375,8 @@ header
     .GoToCart_buttons:hover 
         border-color: $C-pinc
         color: $C-pinc
+        box-shadow: 0px 0px 6px 0px #ef5b70
+        transition: .3s
 
 
     .GoToCart_buttons_link 
@@ -455,6 +456,7 @@ header
         padding: 12px 20px
         position: absolute
         display: none
+        z-index: 1
 
         img 
             padding-top: 18px
@@ -785,11 +787,11 @@ header
 
 
     .productname 
-        font-family: 'Lato'
-        font-size: 13px
-        color: #222222
-        text-align: left
-        text-transform: uppercase
+        color: #6f6e6e;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
 
 
     .price 
@@ -1372,7 +1374,9 @@ footer
 
 
     .menu_product_nav_list_li>a:hover 
+        transition: .3s
         color: $C-pinc
+        
                 
 .contentPage 
     display: flex
@@ -1786,5 +1790,263 @@ footer
 
            
 
-
+/* ------------------------Cтраница Single Page------------------------ */
     
+
+.Single_page_Slider
+    width: 1607px
+    height: 777px
+    border: 1px solid #eaeaea
+    background-color: #f7f7f7
+    margin: 0px auto
+    position: relative
+    
+
+    #slider-wrap
+        width: 1607px
+        height: 777px
+        margin: 0px auto
+        
+
+        #slider 
+        	width: 1607px
+            height: 777px
+
+        .slide
+        	width: 100%
+        	height: 100%
+            margin: 0px auto
+            
+    .slider_preview_next
+        content: ''
+        width: 1607px
+        height: 47px;
+        position: absolute
+        margin-top: -450px
+        display: flex
+        justify-content: space-between
+
+        a:hover 
+            transition: 0.5s
+            background-color: #f35466
+            box-shadow: 0px 0px 3px 0px #000000
+
+        .preview, .next
+            width: 47px 
+            height: 47px
+            background-color: #7e7b7b60
+            display: flex
+            justify-content: center
+            align-items: center
+            
+            img
+                filter: invert(100%)
+
+.Single_page_content
+    height: 1289px
+    width: 1607px
+    margin: 0px auto
+    display: flex
+    justify-content: center
+    position: relative
+
+    .SP_Product_discription
+        width: 1141px
+        height: 730px
+        border: 1px solid #eaeaea
+        background-color: #ffffff  
+        position: absolute
+        margin-top: -80px      
+                
+        .SP_Product_discription_top
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: 73px 261px
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 43px
+
+            h2 
+                color: #f16d7f
+                font-family: Lato
+                font-size: 14px
+                font-weight: 700
+                line-height: 24px
+                text-transform: uppercase
+                border-bottom: 2px solid $C-pinc
+                padding-bottom: 14px
+
+            h3 
+                color: #4d4d4d;
+                font-family: "Lato - Black";
+                font-size: 18px;
+                font-weight: bold
+                line-height: 24px;
+                text-transform: uppercase;
+                margin-bottom: 24px
+
+            .rating
+                .rating-area 
+                    overflow: hidden
+                    width: 120px
+                    margin: 0 auto
+                    display: flex
+                    flex-direction: row-reverse
+                    justify-content: left
+                    margin-top: 5px
+                    margin-left: -1px
+
+
+                .rating-area:not(:checked)>input 
+                    display: none
+
+
+                .rating-area:not(:checked)>label 
+                    width: 20px
+                    padding: 0
+                    cursor: pointer
+                    font-size: 25px
+                    line-height: 17px
+                    color: lightgrey
+                    text-shadow: 1px 1px #bbb
+
+
+                .rating-area:not(:checked)>label:before 
+
+                    content: '★'
+
+
+                .rating-area>input:checked~label 
+                    color: gold
+                    text-shadow: 1px 1px #c60
+
+
+                .rating-area:not(:checked)>label:hover,
+                .rating-area:not(:checked)>label:hover~label 
+                    color: gold
+
+
+                .rating-area>input:checked+label:hover,
+                .rating-area>input:checked+label:hover~label,
+                .rating-area>input:checked~label:hover,
+                .rating-area>input:checked~label:hover~label,
+                .rating-area>label:hover~input:checked~label 
+                    color: gold
+                    text-shadow: 1px 1px goldenrod
+
+
+                .rate-area>label:active 
+
+            p 
+                color: #5e5e5e;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 24px;   
+                text-align: center  
+                margin-bottom: -10px   
+                margin-top: 26px  
+
+
+            .character
+                display: flex
+                justify-content: space-between
+                .character_left, .character_right
+                    padding: 22px
+                    color: #b9b9b9;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    text-transform: uppercase;
+
+                    span
+                        color: #2f2f2f;
+               
+            .price
+                color: #ef5b70;
+                font-family: Lato;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 24px;
+    
+    
+        .SP_Product_discription_botton
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: 73px 261px
+
+            form
+                display: flex
+
+                .CHOOSE_color, .CHOOSE_size, .QUANTITY 
+                    display: flex
+                    flex-direction: column
+                    width: 164px
+                    height: 61px 
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    text-transform: uppercase; 
+
+                    .size, .color
+                        width: 144px;
+                        height: 35px;
+                        border: 1px solid #eaeaea;
+                        background-color: #ffffff;                                    
+                        outline-color: $C-pinc          
+                        font-family: 'Lato'
+                        
+                        .red
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 24px;
+
+                input
+                    width: 144px;
+                    height: 30px;
+                    border: 1px solid #eaeaea;
+                    background-color: #ffffff;
+                    outline-color: $C-pinc   
+                    padding: 1px 5px     
+                    color: #bcbcbc;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+
+                input::-webkit-input-placeholder
+                    color: green
+                    color: #bcbcbc
+                    font-family: Lato
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 24px
+
+        .SP_Product_discription_botton_botton
+            margin-top: 21px
+            
+
+            a         
+                text-decoration: none
+                display: flex
+                width: 537px
+                height: 55px
+                border: 1px solid #ef5b70
+                background-color: #ffffff 
+                color: #ef5b70
+                font-family: Lato
+                font-size: 16px
+                font-weight: 700
+                justify-content: center
+                align-items: center
+
+            a:hover
+                border-color: $C-pinc
+                color: $C-pinc
+                box-shadow: 0px 0px 6px 0px #ef5b70
+                transition: .3s
