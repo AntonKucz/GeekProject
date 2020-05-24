@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Brand</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <script src="https://use.fontawesome.com/0e08f026fe.js"></script>
-    <script src="https://use.fontawesome.com/cf52e0f738.js"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100300400700900&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/0e08f026fe.js"></script>
 </head>
 
 <body>
-    <header class="Index center">
+    <header class="center">
+    
         <div class="logo">
-            <a href="#"><img src="img/logo.png" height="51px" width="59px" alt="Логотип"></a>
-            <a href="#">
-                <p>BRAN<span class="RedLetter">D</span></p>
+            <a class="Logo_link" href="Index.html"><img src="img/logo.png" height="51px" width="59px" alt="Логотип"></a>
+            <a class="Brand_link" href="Index.html">
+                <p class="Brand_text">BRAN<span class="RedLetter">D</span></p>
+
             </a>
         </div>
         <div class="search">
@@ -69,15 +70,17 @@
                                             <div class="rating" id="rating">
                                                 <div class="comment" id="message"></div>
                                                 <div class="rating-area">
-                                                    <input type="radio" id="star-5" name="rating" value="5">
+
+                                                    <input type="radio" id="star-5" name="rating.cart1" value="5">
                                                     <label for="star-5" title="Оценка «5»"></label>
-                                                    <input type="radio" id="star-4" name="rating" value="4">
+                                                    <input type="radio" id="star-4" name="rating.cart1" value="4">
                                                     <label for="star-4" title="Оценка «4»"></label>
-                                                    <input type="radio" id="star-3" name="rating" value="3">
+                                                    <input type="radio" id="star-3" name="rating.cart1" value="3" checked>
                                                     <label for="star-3" title="Оценка «3»"></label>
-                                                    <input type="radio" id="star-2" name="rating" value="2">
+                                                    <input type="radio" id="star-2" name="rating.cart1" value="2">
                                                     <label for="star-2" title="Оценка «2»"></label>
-                                                    <input type="radio" id="star-1" name="rating" value="1">
+                                                    <input type="radio" id="star-1" name="rating.cart1" value="1">
+
                                                     <label for="star-1" title="Оценка «1»"></label>
                                                 </div>
                                             </div>
@@ -97,15 +100,17 @@
                                             <div class="rating" id="rating">
                                                 <div class="comment" id="message"></div>
                                                 <div class="rating-area">
-                                                    <input type="radio" id="star-5" name="rating" value="5">
+
+                                                    <input type="radio" id="star-5" name="rating.cart2" value="5">
                                                     <label for="star-5" title="Оценка «5»"></label>
-                                                    <input type="radio" id="star-4" name="rating" value="4">
+                                                    <input type="radio" id="star-4" name="rating.cart2" value="4" checked>
                                                     <label for="star-4" title="Оценка «4»"></label>
-                                                    <input type="radio" id="star-3" name="rating" value="3">
+                                                    <input type="radio" id="star-3" name="rating.cart2" value="3">
                                                     <label for="star-3" title="Оценка «3»"></label>
-                                                    <input type="radio" id="star-2" name="rating" value="2">
+                                                    <input type="radio" id="star-2" name="rating.cart2" value="2">
                                                     <label for="star-2" title="Оценка «2»"></label>
-                                                    <input type="radio" id="star-1" name="rating" value="1">
+                                                    <input type="radio" id="star-1" name="rating.cart2" value="1">
+
                                                     <label for="star-1" title="Оценка «1»"></label>
                                                 </div>
                                             </div>
@@ -113,7 +118,6 @@
                                         </div>
                                     </div>
                                 </a>
-
 
                                 <div class="GoToCart_total">
                                     <p class="GoToCart_total_TOTAL">TOTAL</p>
@@ -127,9 +131,6 @@
                                 </a>
 
                             </div>
-
-
-
 
                         </li>
                     </ul>
@@ -166,10 +167,12 @@
                     <div class="drop_flex">
                         <h3 class="drop_h3">Women</h3>
                         <ul class="drop_ul">
-                            <li><a href="" class="drop_a">Dresses </a></li>
-                            <li><a href="" class="drop_a">Tops </a></li>
-                            <li><a href="" class="drop_a">Denim </a></li>
-                            <li><a href="" class="drop_a">Leggings/Pants </a></li>
+
+                            <li><a href="Single page.html" class="drop_a">Dresses </a></li>
+                            <li><a href="Single page.html" class="drop_a">Tops </a></li>
+                            <li><a href="Single page.html" class="drop_a">Denim </a></li>
+                            <li><a href="Single page.html" class="drop_a">Leggings/Pants </a></li>
+
                         </ul>
                         <h3 class="drop_h3">Kids</h3>
                         <ul class="drop_ul">
@@ -186,7 +189,10 @@
                             <li><a href="" class="drop_a">Leggings/Pants </a></li>
                             <li><a href="" class="drop_a">Shoes Beauty </a></li>
                         </ul>
-                        <img src="img/collman.png" alt="">
+
+                        <a class="image_link" href=""><div class="image_box">Super<br>Sale!</div></a>
+                                  
+
                     </div>
                 </div>
             </li>
@@ -201,91 +207,468 @@
         <p class="arrival">New Arrivals</p>
         <nav class="menu_product_nav">
             <ul class="menu_product_nav_list">
-            <li class="menu_product_nav_list_li"><a href="">Home /</a></li>
-            <li class="menu_product_nav_list_li"><a href="">Men /</a></li>
-            <li class="menu_product_nav_list_li menu_product_active"><a href="">New Arrivals</a></li>
-            
+
+                <li class="menu_product_nav_list_li"><a href="">Home /</a></li>
+                <li class="menu_product_nav_list_li"><a href="">Men /</a></li>
+                <li class="menu_product_nav_list_li menu_product_active"><a href="">New Arrivals</a></li>
+
+
 
             </ul>
 
 
         </nav>
     </div>
-    
-    <div class="FutureItems center">
-        <h2>Fetured Items</h2>
-        <h3>Shop for items based on what we featured in this week</h3>
-        <section class="Product_Box center">
-            <article class="Product">
-                <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/MangoTSM.png" alt=""></a>
-                <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
-                <a class="Product_Discription" href="№">
-                    <div class="productname">Mango People T-shirt</div>
-                    <div class="price">$52.00</div>
-                </a>
+
+
+<div class="contentPage center">
+    <section class="contentPage_ac">
+        <div class="contentPage_ac_element">
+            <input id="ac-1" name="accordion-1" type="checkbox" checked />
+            <label for="ac-1">Category</label>
+            <article>
+                <ul>
+                    <li><a href="">Accessories </a></li> 
+                    <li><a href="">Bags </a></li> 
+                    <li><a href="">Denim </a></li> 
+                    <li><a href="">Hoodies & Sweatshirts </a></li> 
+                    <li><a href="">Jackets & Coats </a></li> 
+                    <li><a href="">Pants </a></li> 
+                    <li><a href="">Polos </a></li> 
+                    <li><a href="">Shirts </a></li> 
+                    <li><a href="">Shoes </a></li> 
+                    <li><a href="">Shorts </a></li> 
+                    <li><a href="">Sweaters & Knits </a></li> 
+                    <li><a href="">T-Shirts </a></li> 
+                    <li><a href="">Tanks</a></li> 
+                 </ul>
             </article>
-            <article class="Product">
-                <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/MangoTSW.png" alt=""></a>
-                <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
-                <a class="Product_Discription" href="№">
-                    <div class="productname">Mango People T-shirt</div>
-                    <div class="price">$52.00</div>
-                </a>
-            </article>
-            <article class="Product">
-                <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/MangoTSM1.png" alt=""></a>
-                <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
-                <a class="Product_Discription" href="№">
-                    <div class="productname">Mango People T-shirt</div>
-                    <div class="price">$52.00</div>
-                </a>
-            </article>
-            <article class="Product">
-                <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/g4.png" alt=""></a>
-                <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
-                <a class="Product_Discription" href="№">
-                    <div class="productname">Mango People T-shirt</div>
-                    <div class="price">$52.00</div>
-                </a>
-            </article>
-            <article class="Product">
-                <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/g5.png" alt=""></a>
-                <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
-                <a class="Product_Discription" href="№">
-                    <div class="productname">Mango People T-shirt</div>
-                    <div class="price">$52.00</div>
-                </a>
-            </article>
-            <article class="Product">
-                <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/g6.png" alt=""></a>
-                <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
-                <a class="Product_Discription" href="№">
-                    <div class="productname">Mango People T-shirt</div>
-                    <div class="price">$52.00</div>
-                </a>
-            </article>
-            <article class="Product">
-                <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/g7.png" alt=""></a>
-                <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
-                <a class="Product_Discription" href="№">
-                    <div class="productname">Mango People T-shirt</div>
-                    <div class="price">$52.00</div>
-                </a>
-            </article>
-            <article class="Product">
-                <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/g8.png" alt=""></a>
-                <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
-                <a class="Product_Discription" href="№">
-                    <div class="productname">Mango People T-shirt</div>
-                    <div class="price">$52.00</div>
-                </a>
-            </article>
-        </section>
-        <div class="button2"><a href="#">Browse All Product&nbsp;&rarr;</a>
         </div>
+        <div class="contentPage_ac_element">
+            <input id="ac-2" name="accordion-1" type="checkbox" />
+            <label for="ac-2">BRAND</label> 
+            <article>
+                <ul>
+                   <li><a href="">Accessories </a></li> 
+                   <li><a href="">Bags </a></li> 
+                   <li><a href="">Denim </a></li> 
+                   <li><a href="">Hoodies & Sweatshirts </a></li> 
+                   <li><a href="">Jackets & Coats </a></li> 
+                   <li><a href="">Pants </a></li> 
+                   <li><a href="">Polos </a></li> 
+                   <li><a href="">Shirts </a></li> 
+                   <li><a href="">Shoes </a></li> 
+                   <li><a href="">Shorts </a></li> 
+                   <li><a href="">Sweaters & Knits </a></li> 
+                   <li><a href="">T-Shirts </a></li> 
+                   <li><a href="">Tanks</a></li> 
+                </ul>
+            </article>
+        </div>
+        <div class="contentPage_ac_element">
+            <input id="ac-3" name="accordion-1" type="checkbox" />
+            <label class="label" for="ac-3">DESIGNER</label>
+            <article>
+                <ul>
+                    <li><a href="">Accessories </a></li> 
+                    <li><a href="">Bags </a></li> 
+                    <li><a href="">Denim </a></li> 
+                    <li><a href="">Hoodies & Sweatshirts </a></li> 
+                    <li><a href="">Jackets & Coats </a></li> 
+                    <li><a href="">Pants </a></li> 
+                    <li><a href="">Polos </a></li> 
+                    <li><a href="">Shirts </a></li> 
+                    <li><a href="">Shoes </a></li> 
+                    <li><a href="">Shorts </a></li> 
+                    <li><a href="">Sweaters & Knits </a></li> 
+                    <li><a href="">T-Shirts </a></li> 
+                    <li><a href="">Tanks</a></li> 
+                 </ul>
+            </article>
+        </div>
+    </section>
+
+    <div class="contantPage_Filters_and_Products">
+    <div class="contentPage_ProductBox">
+            <div class="contentPage_Filters">
+                <div class="filters_top">
+                <div class="filters_top_Trading">
+                        <p>Tranding NOW</p>
+                    <ul> 
+                        <li><a href="">Bohemian</a></li> 
+                        <li><a href="">Floral</a></li> 
+                        <li><a href="">Lace</a></li> 
+                    </ul>
+                     <ul>
+                        <li><a href="">Floral</a></li>
+                        <li><a href="">Lace</a></li> 
+                        <li><a href="">Bohemian</a></li> 
+                    </ul>
+                
+                </div>
+                <div class="filters_top_sizes">
+                    <p>SIZE</p>
+                    <form class="filters_top_sizes_boxes" action="">
+                        
+                        <label class="check">
+                            <input type="checkbox"/>
+                            <div class="box"></div>
+                          </label>
+                          <p>XXL</p>
+                          <label class="check">
+                            <input type="checkbox"/>
+                            <div class="box"></div>
+                          </label>
+                          <p>XS</p>
+                          <label class="check">
+                            <input type="checkbox"/>
+                            <div class="box"></div>
+                          </label>
+                          <p>S</p>
+                          <label class="check">
+                            <input type="checkbox"/>
+                            <div class="box"></div>
+                          </label>
+                          <p>M</p>
+                    </form>
+                    <form class="filters_top_sizes_boxes" action="">
+                    <label class="check">
+                            <input type="checkbox"/>
+                            <div class="box"></div>
+                          </label>
+                          <p>XXL</p>
+                          <label class="check">
+                            <input type="checkbox"/>
+                            <div class="box"></div>
+                          </label>
+                          <p>XS</p>
+                          <label class="check">
+                            <input type="checkbox"/>
+                            <div class="box"></div>
+                          </label>
+                          <p>S</p>
+                    </form>
+                </div>
+                <div class="filters_top_prise">
+                    <div class="slidecontainer">                        
+                        <p>Price</p>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onchange="document.getElementById('rangeValue').innerHTML = this.value;>
+                        <output for="myRange" name="level"></output>
+                 
+                  </div>
+                </div>
+
+                </div>
+                <div class="filter_down">
+                    <div class="sortbyname">
+                        <a class="SortBy_link" href="">Sort by</a>                         
+                            <select class="select">
+                                <option selected>Name</option>
+                                <option>Brand1</option>
+                                <option>Brand2</option>
+                                <option>Brand3</option>
+                              </select>
+                    </a>  
+                    </div>
+                    <div class="sortbyname">
+                        <a class="SortBy_link" href="">Show</a>                         
+                            <select class="select">
+                                <option selected>9</option>
+                                <option>12</option>
+                                <option>15</option>
+                                <option >18</option>
+                              </select>
+                    </a>  
+                    </div>
+                    
+                    <div class="show"></div>
+                </div>
+            </div>
+            <section class="Product_Box">
+                <article class="Product">
+                    <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/product/p1.png" alt=""></a>
+                    <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
+                    <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
+                    <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
+                    <a class="Product_Discription" href="№">
+                        <div class="productname">Mango People T-shirt</div>
+                        <div class="price">$52.00
+                            
+                            <div class="rating" id="rating">
+                                <div class="comment" id="message"></div>
+                                <div class="rating-area">
+                                    <input type="radio" id="star-5" name="rating.1" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>
+                                    <input type="radio" id="star-4" name="rating.1" value="4">
+                                    <label for="star-4" title="Оценка «4»"></label>
+                                    <input type="radio" id="star-3" name="rating.1" value="3" checked>
+                                    <label for="star-3" title="Оценка «3»"></label>
+                                    <input type="radio" id="star-2" name="rating.1" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>
+                                    <input type="radio" id="star-1" name="rating.1" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </article>
+                <article class="Product">
+                    <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/product/p2.png" alt=""></a>
+                    <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
+                    <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
+                    <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
+                    <a class="Product_Discription" href="№">
+                        <div class="productname">Mango People T-shirt</div>
+                        <div class="price">$52.00
+                            
+                            <div class="rating" id="rating">
+                                <div class="comment" id="message"></div>
+                                <div class="rating-area">
+                                    <input type="radio" id="star-5" name="rating.2" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>
+                                    <input type="radio" id="star-4" name="rating.2" value="4" checked>
+                                    <label for="star-4" title="Оценка «4»"></label>
+                                    <input type="radio" id="star-3" name="rating.2" value="3">
+                                    <label for="star-3" title="Оценка «3»"></label>
+                                    <input type="radio" id="star-2" name="rating.2" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>
+                                    <input type="radio" id="star-1" name="rating.2" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </article>
+                <article class="Product">
+                    <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/product/p3.png" alt=""></a>
+                    <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
+                    <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
+                    <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
+                    <a class="Product_Discription" href="№">
+                        <div class="productname">Mango People T-shirt</div>
+                        <div class="price">$52.00
+                            
+                            <div class="rating" id="rating">
+                                <div class="comment" id="message"></div>
+                                <div class="rating-area">
+                                    <input type="radio" id="star-5" name="rating.3" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>
+                                    <input type="radio" id="star-4" name="rating.3" value="4">
+                                    <label for="star-4" title="Оценка «4»"></label>
+                                    <input type="radio" id="star-3" name="rating.3" value="3" checked>
+                                    <label for="star-3" title="Оценка «3»"></label>
+                                    <input type="radio" id="star-2" name="rating.3" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>
+                                    <input type="radio" id="star-1" name="rating.3" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </article>
+                <article class="Product">
+                    <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/product/p4.png" alt=""></a>
+                    <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
+                    <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
+                    <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
+                    <a class="Product_Discription" href="№">
+                        <div class="productname">Mango People T-shirt</div>
+                        <div class="price">$52.00
+                            
+                            <div class="rating" id="rating">
+                                <div class="comment" id="message"></div>
+                                <div class="rating-area">
+                                    <input type="radio" id="star-5" name="rating.4" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>
+                                    <input type="radio" id="star-4" name="rating.4" value="4" checked>
+                                    <label for="star-4" title="Оценка «4»"></label>
+                                    <input type="radio" id="star-3" name="rating.4" value="3">
+                                    <label for="star-3" title="Оценка «3»"></label>
+                                    <input type="radio" id="star-2" name="rating.4" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>
+                                    <input type="radio" id="star-1" name="rating.4" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </article>
+                <article class="Product">
+                    <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/product/p5.png" alt=""></a>
+                    <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
+                    <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
+                    <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
+                    <a class="Product_Discription" href="№">
+                        <div class="productname">Mango People T-shirt</div>
+                        <div class="price">$52.00
+                            
+                            <div class="rating" id="rating">
+                                <div class="comment" id="message"></div>
+                                <div class="rating-area">
+                                    <input type="radio" id="star-5" name="rating.5" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>
+                                    <input type="radio" id="star-4" name="rating.5" value="4">
+                                    <label for="star-4" title="Оценка «4»"></label>
+                                    <input type="radio" id="star-3" name="rating.5" value="3">
+                                    <label for="star-3" title="Оценка «3»"></label>
+                                    <input type="radio" id="star-2" name="rating.5" value="2" checked>
+                                    <label for="star-2" title="Оценка «2»"></label>
+                                    <input type="radio" id="star-1" name="rating.5" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </article>
+                <article class="Product">
+                    <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/product/p6.png" alt=""></a>
+                    <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
+                    <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
+                    <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
+                    <a class="Product_Discription" href="№">
+                        <div class="productname">Mango People T-shirt</div>
+                        <div class="price">$52.00
+                            
+                            <div class="rating" id="rating">
+                                <div class="comment" id="message"></div>
+                                <div class="rating-area">
+                                    <input type="radio" id="star-5" name="rating.6" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>
+                                    <input type="radio" id="star-4" name="rating.6" value="4" checked>
+                                    <label for="star-4" title="Оценка «4»"></label>
+                                    <input type="radio" id="star-3" name="rating.6" value="3">
+                                    <label for="star-3" title="Оценка «3»"></label>
+                                    <input type="radio" id="star-2" name="rating.6" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>
+                                    <input type="radio" id="star-1" name="rating.6" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </article>
+                <article class="Product">
+                    <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/product/p7.png" alt=""></a>
+                    <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
+                    <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
+                    <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
+                    <a class="Product_Discription" href="№">
+                        <div class="productname">Mango People T-shirt</div>
+                        <div class="price">$52.00
+                            
+                            <div class="rating" id="rating">
+                                <div class="comment" id="message"></div>
+                                <div class="rating-area">
+                                    <input type="radio" id="star-5" name="rating.7" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>
+                                    <input type="radio" id="star-4" name="rating.7" value="4">
+                                    <label for="star-4" title="Оценка «4»"></label>
+                                    <input type="radio" id="star-3" name="rating.7" value="3" checked>
+                                    <label for="star-3" title="Оценка «3»"></label>
+                                    <input type="radio" id="star-2" name="rating.7" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>
+                                    <input type="radio" id="star-1" name="rating.7" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </article>
+                <article class="Product">
+                    <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/product/p8.png" alt=""></a>
+                    <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
+                    <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
+                    <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
+                    <a class="Product_Discription" href="№">
+                        <div class="productname">Mango People T-shirt</div>
+                        <div class="price">$52.00
+                            
+                            <div class="rating" id="rating">
+                                <div class="comment" id="message"></div>
+                                <div class="rating-area">
+                                    <input type="radio" id="star-5" name="rating.8" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>
+                                    <input type="radio" id="star-4" name="rating.8" value="4">
+                                    <label for="star-4" title="Оценка «4»"></label>
+                                    <input type="radio" id="star-3" name="rating.8" value="3" checked>
+                                    <label for="star-3" title="Оценка «3»"></label>
+                                    <input type="radio" id="star-2" name="rating.8" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>
+                                    <input type="radio" id="star-1" name="rating.8" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </article>
+                <article class="Product">
+                    <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/product/p9.png" alt=""></a>
+                    <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
+                    <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
+                    <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
+                    <a class="Product_Discription" href="№">
+                        <div class="productname">Mango People T-shirt</div>
+                        <div class="price">$52.00
+                            
+                            <div class="rating" id="rating">
+                                <div class="comment" id="message"></div>
+                                <div class="rating-area">
+                                    <input type="radio" id="star-5" name="rating.9" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>
+                                    <input type="radio" id="star-4" name="rating.9" value="4">
+                                    <label for="star-4" title="Оценка «4»"></label>
+                                    <input type="radio" id="star-3" name="rating.9" value="3">
+                                    <label for="star-3" title="Оценка «3»"></label>
+                                    <input type="radio" id="star-2" name="rating.9" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>
+                                    <input type="radio" id="star-1" name="rating.9" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </article>
+            </section>           
+        </div>
+        <div class="pagination_and_botton">
+        <div class="pagination">
+            <ul id="pagination-flickr">
+                <li class="previous-off" class=""><a href="?page=2"><</a></li>
+                <li class="active">1</li>
+                <li><a href="?page=2">2</a></li>
+                <li><a href="?page=3">3</a></li>
+                <li><a href="?page=4">4</a></li>
+                <li><a href="?page=5">5</a></li>
+                <li><a href="?page=6">6</a></li>
+                <li><a href="?page=7">.....20</a></li>
+                <li class="next"><a href="?page=2">></a></li>                
+        </ul>
+        </div> 
+        <a class="viewAll" href="">View All</a>     
     </div>
-    <div class="PromoBox_2_productpage center">
-        <a class="Link_on_PromoBox_2_product" href="">
+    </div>
+    </div>
+    <div class="PromoBox_2_productpage">
+        <a class="Link_on_PromoBox_2_product center" href="#">
+
             <div class="PromoBox_Elements_2_productpage">
                 <div class="PromoBox_Element_2_productpage">
                     <div class="Element_Pic"></div>
@@ -349,7 +732,9 @@
             <form action="">
                 <div class="form_for_email">
                     <input class="email" type="email"
-                        pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required
+
+                        pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'|~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required
+
                         placeholder="Enter Your Email">
                     <input class="button3" type="submit" value="Subscribe">
             </form>
@@ -362,13 +747,15 @@
         <div class="footer_top">
             <div class="footer_text">
                 <div class="logo">
-                    <a href="#"><img src="img/logo.png" height="51px" width="59px" alt="Логотип"></a>
-                    <a href="#">
-                        <p>BRAN<span class="RedLetter">D</span></p>
-                    </a>
 
+                    <a class="Logo_link" href="Index.html"><img src="img/logo.png" height="51px" width="59px" alt="Логотип"></a>
+                    <a class="Brand_link" href="Index.html">
+                        <p class="Brand_text">BRAN<span class="RedLetter">D</span></p>
+                    </a>
                 </div>
                 <div class="footer_text_text">
+                    <i class="fas fa-greater-than"></i>
+
                     <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally
                         syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
                         expanded array of processes and cross-unit partnerships. <br> <br>
@@ -381,9 +768,11 @@
             </div>
             <div class="footer_menu">
                 <ul class="footer_menu_ul">
-                    <li class="footer_li_1"><a href="#">COMPANY</a>
+
+                    <li class="footer_li_1"><a href="Index.html">COMPANY</a>
                         <ul>
-                            <li class="footer_li_2"><a href="#">Home</a></li>
+                            <li class="footer_li_2"><a href="Index.html">Home</a></li>
+
                             <li class="footer_li_2"><a href="#">Shop</a></li>
                             <li class="footer_li_2"><a href="#">About</a></li>
                             <li class="footer_li_2"><a href="#">How It Works</a></li>
@@ -403,8 +792,10 @@
 
                     <li class="footer_li_1"><a href="#">SHOP CATEGORY</a>
                         <ul>
-                            <li class="footer_li_2"><a href="#">Men</a></li>
-                            <li class="footer_li_2"><a href="#">Women</a></li>
+
+                            <li class="footer_li_2"><a href="Product.html">Men</a></li>
+                            <li class="footer_li_2"><a href="Single page.html">Women</a></li>
+
                             <li class="footer_li_2"><a href="#">Child</a></li>
                             <li class="footer_li_2"><a href="#">Apparel</a></li>
                             <li class="footer_li_2"><a href="#">Brows All</a></li>

@@ -1,0 +1,2051 @@
+$C-pinc: #f16d7f
+
+.body 
+    margin: 0
+    padding: 0
+
+.center 
+    padding: 0 calc(50% - 570px)
+
+.logo 
+    display: flex
+    align-items: center
+    text-decoration: none
+
+    .Brand_link 
+        text-decoration: none
+
+    .Brand_text 
+        font-family: 'Lato'
+        font-size: 27px
+        font-weight: 300
+        color: rgba(34, 34, 34, 1)
+        text-align: center
+        letter-spacing: 0.03em
+        line-height: 32px
+        text-transform: uppercase
+        padding-left: 13px
+
+
+    .RedLetter 
+        font-family: 'Lato'
+        font-size: 27px
+        font-weight: 900
+        color: rgba(241, 109, 127, 1)
+        text-align: center
+        letter-spacing: 0.03em
+        line-height: 32px
+        text-transform: uppercase
+
+header 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 100px
+    border-bottom: 1px solid #ececec
+    position: relative
+
+    .search 
+        display: flex
+        border-radius: 3px 3px 3px 3px
+        margin-left: 37px
+        align-items: center
+
+
+    .Browse 
+        height: 38px
+        width: 87px
+        text-decoration: none
+        font-family: 'Lato'
+        font-size: 14px
+        font-weight: 300
+        color: #222222
+        letter-spacing: 0.03em
+        line-height: 37px
+        border: 1px solid #e6e6e6
+        border-radius: 3px 0px 0px 3px
+        background-image: -webkit-linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%)
+        display: block
+        text-align: center
+        position: relative
+        margin-bottom: 20px
+        list-style-type: none
+        padding-left: 0px
+        margin-top: 20px
+
+
+    .Browse_link 
+        color: #222222
+
+
+    .Browse>a 
+
+    .Browse>li>a 
+        text-decoration: none
+        display: block
+
+    .Browse>li>a:after
+        content: '\25BC'
+        font-size: 9px
+        color: #222222
+        font-family: 'arial black'
+        font-weight: bold
+        
+
+    .Browse>li>a:hover 
+        transition: 0.5s
+        box-shadow: 0px 0px 10px 0px #837d7d56
+
+
+    .Browse:hover .Browse_list 
+        display: flex
+
+
+    #BrowseClick:after 
+        display: flex
+
+
+    .Browse_list 
+        display: none
+        flex-direction: column
+        list-style-type: none
+        height: 580px
+        width: 262px
+        background-color: #ffffff
+        border-radius: 5px
+        position: absolute
+        margin-top: 3px
+
+
+    .Browse_list_h 
+        width: 236px
+        display: block
+        font-family: 'Lato'
+        font-size: 14px
+        color: #161616
+        font-weight: bold
+        text-align: left
+        letter-spacing: 0.03em
+        line-height: 32px
+        text-transform: uppercase
+        border-bottom: 1px solid #e8e8e8
+        padding-bottom: 10px
+        margin-top: 15px
+        margin-right: 5px
+        margin-bottom: 10px
+
+
+
+    .Browse_list_a 
+        height: 253px
+        width: 311px
+        font-family: 'Lato'
+        font-size: 14px
+        color: #4f4f4f
+        text-align: left
+        letter-spacing: 0.03em
+        line-height: 28px
+
+
+    .Browse_list_a>a,
+    .Browse_list_h>a 
+        text-decoration: none
+        color: #161616
+        
+
+
+    .Browse_list_a>a:hover,
+    .Browse_list_h>a:hover 
+        color: $C-pinc
+
+
+    .search>input 
+        height: 36px
+        width: 280px
+        background-color: #ffffff
+        border: 1px solid #e6e6e6
+        padding-left: 10px
+        padding-right: 10px
+
+
+    .search>input:focus 
+        transition: 0.5s
+        box-shadow: 0px 0px 10px 0px #837d7d56
+        outline: none
+
+
+
+    .search>.lupa 
+        display: block
+        height: 38px
+        width: 36px
+        background-color: #ffffff
+        border: 1px solid #e6e6e6
+        border-radius: 0px 3px 3px 0px
+
+
+    .search>.lupa>img 
+        display: block
+        margin: auto
+        padding-top: 11px
+
+
+    .search>a:hover 
+        transition: 0.5s
+        box-shadow: 0px 0px 10px 0px #837d7d56
+
+
+    .basket 
+        display: flex
+        flex-direction: column
+        margin-left: 180px
+
+
+    .basket_ul 
+        list-style-type: none
+
+
+    .basket_il_drop 
+        list-style-type: none
+        position: relative
+
+
+    .basket:hover .basket_img 
+        transition: 0.5s
+        filter: invert(40%)
+
+
+    .basket:hover .GoToCart 
+        display: flex
+
+
+
+    .GoToCart 
+        display: none
+        flex-direction: column
+        height: 440px
+        width: 261px
+        position: absolute
+        background-color: white
+        padding-left: 20px
+        padding-top: 20px
+        margin-left: -40px
+        margin-top: 10px
+        border-radius: 5px
+
+
+    .GoToCart_elements 
+        margin-top: 20px
+        display: flex
+        flex-wrap: wrap
+        height: 85px
+        width: 230px
+        position: relative
+
+
+
+    .GoToCart_elements__cont 
+
+        margin-top: 0px
+        padding-left: 14px
+
+
+
+    .GoToCard_elements_name 
+        margin-top: 40px
+        font-family: 'Lato'
+        font-size: 12px
+        font-weight: bold
+        color: #222222
+        text-transform: uppercase
+        text-decoration: none
+
+
+
+    .GoToCard_elements_price 
+        font-family: 'Lato'
+        font-size: 12px
+        color: $C-pinc
+
+
+    .crossBlock 
+        display: block
+        width: 15px
+        height: 15px
+
+
+    .fa-times-circle 
+        display: block
+        width: 15px
+        height: 15px
+        font-family: 'FontAwesome'
+        text-align: right
+        font-size: 16px
+        color: #c0c0c0
+        position: absolute
+        margin-top: 30px
+        margin-left: 130px
+
+
+    .cross:hover .fa-times-circle 
+        color: rgb(80, 77, 77)
+
+
+    .rating-area 
+        overflow: hidden
+        width: 65px
+        margin: 0 auto
+        display: flex
+        flex-direction: row-reverse
+        justify-content: left
+        margin-top: 5px
+        margin-left: -1px
+
+
+    .rating-area:not(:checked)>input 
+        display: none
+
+
+    .rating-area:not(:checked)>label 
+        width: 13px
+        padding: 0
+        cursor: pointer
+        font-size: 17px
+        line-height: 17px
+        color: lightgrey
+        text-shadow: 1px 1px #bbb
+
+
+    .rating-area:not(:checked)>label:before 
+
+        content: '★'
+
+
+    .rating-area>input:checked~label 
+        color: gold
+        text-shadow: 1px 1px #c60
+
+
+    .rating-area:not(:checked)>label:hover,
+    .rating-area:not(:checked)>label:hover~label 
+        color: gold
+
+
+    .rating-area>input:checked+label:hover,
+    .rating-area>input:checked+label:hover~label,
+    .rating-area>input:checked~label:hover,
+    .rating-area>input:checked~label:hover~label,
+    .rating-area>label:hover~input:checked~label 
+        color: gold
+        text-shadow: 1px 1px goldenrod
+
+
+    .rate-area>label:active 
+        position: relative
+
+
+    .GoToCart_total 
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        margin-right: 40px
+        font-family: 'Lato'
+        font-size: 16px
+        font-weight: bold
+        color: #222222
+        text-transform: uppercase
+        margin-top: 37px
+
+
+    .GoToCart_buttons 
+        display: block
+        height: 50px
+        width: 225px
+        font-family: 'Lato'
+        font-size: 14px
+        font-weight: bold
+        color: #4a4a4a
+        text-transform: uppercase
+        border: 1px solid #eaeaea
+        text-align: center
+        margin-top: 10px
+        line-height: 50px
+
+
+    .GoToCart_buttons:hover 
+        border-color: $C-pinc
+        color: $C-pinc
+        box-shadow: 0px 0px 6px 0px #ef5b70
+        transition: .3s
+
+
+    .GoToCart_buttons_link 
+        text-decoration: none
+
+
+    .button 
+        height: 38px
+        width: 130px
+        background-color: $C-pinc
+        margin-left: 26Px
+        display: block
+
+
+    .button>a 
+        display: block
+        font-family: 'Lato'
+        font-size: 15px
+        color: #ffffff
+        text-align: right
+        letter-spacing: 0.03em
+        line-height: 40px
+        text-decoration: none
+        text-align: center
+
+
+
+
+    .button:hover 
+        transition: 0.5s
+        background-color: #f35466
+        box-shadow: 0px 0px 2px 0px #000000
+
+    .button>a:after
+        content: '\25BE'
+
+.menu 
+    margin-left: 240px
+    border-bottom: #9f9f9f
+    margin-bottom: -16px   
+
+    .menu_list 
+        display: flex
+        flex-wrap: wrap
+        list-style-type: none    
+        
+        .menu_elements 
+
+            a 
+                text-decoration: none
+                font-family: 'Lato'
+                font-size: 14px
+                font-weight: bold
+                color: #222222
+                line-height: 26px
+                text-transform: uppercase
+                display: block
+                padding: 20px 20px
+
+            a:hover 
+                transition: 0.1s
+                color: #9c9c9c
+                padding-top: 20px
+                position: relative
+
+
+            .menu_active_link 
+                border-bottom: 4px solid #f35466
+                padding-top: 20px
+
+    .menu_list:hover .drop 
+        display: flex
+
+    .drop 
+        background-color: #fff
+        border-radius: 5px
+        padding: 12px 20px
+        position: absolute
+        display: none
+        z-index: 1
+
+        img 
+            padding-top: 18px
+
+        .image_box
+            width: 255px
+            height: 118px
+            color: #ffffff
+            font-family: "Lato - Black"
+            font-size: 22px
+            font-weight: 400
+            line-height: 28px;
+            text-transform: uppercase
+            letter-spacing: 0.55px
+            background-image: url(img/collman.png)
+            text-align: end
+            display: flex
+            flex-direction: column-reverse
+            margin-left: -35px
+                
+        .image_link:hover
+            transition: .9s
+            filter: brightness(105%);
+
+        .drop_flex
+            h3 
+                width: 238px
+                border-bottom: 1px solid #e8e8e8
+                font-family: 'Lato'
+                font-size: 14px
+                color: rgba(35, 35, 35, 1)
+                letter-spacing: 0.03em
+                padding: 6px 0
+                text-transform: uppercase
+                
+
+        
+            ul 
+                list-style-type: none
+                margin: 0px
+                padding: 0px
+            
+            
+                .drop_a 
+                    font-family: 'Lato'
+                    font-size: 14px
+                    color: #968c8c;
+                    letter-spacing: 0.03em
+                    line-height: 14px
+                    text-decoration: none
+                    padding: 8px 0px
+                    text-transform: none
+                
+                
+                .drop_a:hover 
+                    transition: 0.3s
+                    color: $C-pinc
+        
+            .drop_flex:not(:last-child) 
+            margin-right: 46px
+
+.PromoBox_1 
+    display: flex
+    align-items: center
+    height: 610px
+    width: 1600px
+    background-image: url(img/Man.png)
+    background-position-y: -50px
+    background-repeat: no-repeat
+    margin: auto
+
+
+    .PromoText 
+        display: block
+        height: 92px
+        width: 500px
+        border-left: 12px solid $C-pinc
+        text-align: left
+        padding-left: 12px
+        padding-right: 0px
+        margin-left: 230px
+
+
+    .Brand 
+        font-family: 'Lato'
+        font-size: 60px
+        font-weight: 900
+        color: #222222
+        text-align: right
+        letter-spacing: 0.03em
+        line-height: 45px
+
+
+    .LUX 
+        font-family: 'Lato'
+        font-size: 40px
+        font-weight: 900
+        color: #222222
+        text-align: right
+        letter-spacing: 0.03em
+
+
+
+    .FASHION 
+        font-family: 'Lato'
+        font-size: 40px
+        font-weight: 900
+        color: $C-pinc
+        text-align: right
+        letter-spacing: 0.03em
+        -webkit-transform: scale(1)
+        -ms-transform: scale(1)
+        transform: scale(1)
+
+.contentBox 
+    height: 823px
+    width: 1141px
+    display: flex
+    margin-top: 98px
+    justify-content: space-between
+
+
+    .leftBox 
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+
+    .leftBox>a:hover 
+        transition: 0.7s
+        transform: scale(1.01)
+        box-shadow: 0px 0px 30px 1px #615f5f0e
+
+
+    .rihhtBox 
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+
+    .rihhtBox>a:hover 
+        transition: 0.7s
+        transform: scale(1.01)
+        box-shadow: 0px 0px 34px 1px #615f5f4b
+
+
+    .contentTextBox 
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        position: absolute
+        display: flex
+        height: auto
+        width: auto
+        background-color: #ffffff
+        margin-top: 26Px
+        padding: 15px
+        /*Text styles for "hOT dEAL" */
+        font-family: 'Lato'
+        font-size: 18px
+        font-weight: 900
+        color: #222222
+        letter-spacing: 0.03em
+        text-transform: uppercase
+
+
+
+    .redtext 
+        /*Text styles for "FOR MEN" */
+        display: flex
+        font-family: 'Lato'
+        font-size: 30px
+        font-weight: 900
+        color: $C-pinc
+        letter-spacing: 0.03em
+        text-transform: uppercase
+
+.FutureItems 
+    width: 1139px
+    margin-top: 100Px
+
+
+    h2 
+        font-family: 'Lato'
+        font-size: 30px
+        font-weight: bold
+        color: #222222
+        letter-spacing: 0.03em
+        line-height: 54px
+        text-align: center
+        margin: 0 auto
+
+
+    h3 
+        font-family: 'Lato'
+        font-size: 14px
+        color: #9f9f9f
+        text-align: center
+        letter-spacing: 0.03em
+        line-height: 54px
+        margin: 0 auto
+        margin-top: -15px
+        margin-bottom: 60px
+
+.Product_Box 
+   
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    flex-wrap: wrap
+
+
+    .Product 
+        position: relative
+        height: 379px
+        width: 261px
+        display: flex
+        flex-direction: column
+        margin-bottom: 31px
+
+
+
+    .Product:hover 
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+        transition: 0.2s
+
+
+    .Product:hover .Product_Pic 
+        filter: brightness(40%) blur(.7px) contrast(80%); 
+        transition: 0.2s
+
+
+    .Product:hover .addTo
+        display: flex
+        transition: 0.2s
+
+    .Product:hover .addTo_like 
+        display: flex
+        transition: 0.2s
+
+    .Product:hover .addTo_like_2 
+        display: flex
+        transition: 0.2s
+
+    .addTo 
+        position: absolute
+        display: none
+        height: 39px
+        width: 123px
+        font-family: 'Lato'
+        font-size: 13px
+        font-weight: bold
+        color: #ffffff
+        border: 1px solid white
+        align-items: center
+        margin-top: 97px
+        margin-left: 70px
+        text-decoration: none
+
+
+    .addTo>img 
+        margin-left: 12px
+        margin-right: 8px
+        margin-top: 10px
+        margin-bottom: 7px
+
+
+    .addTo:hover 
+        box-shadow: 0px 2px 4px 2px #f7f5f5a1
+        transition: 0.2s
+
+
+    .addTo_like
+        position: absolute
+        display: none
+        width: 57px;
+        height: 38px;
+        font-family: 'Lato'
+        font-size: 13px
+        font-weight: bold
+        color: #ffffff
+        border: 1px solid white
+        align-items: center
+        margin-top: 145px
+        margin-left: 70px
+        text-decoration: none
+
+    .addTo_like_2
+        position: absolute
+        display: none
+        width: 57px;
+        height: 38px;
+        font-family: "Font Awesome";
+        font-size: 13px
+        font-weight: bold
+        color: #ffffff
+        border: 1px solid white
+        align-items: center
+        margin-top: 145px
+        margin-left: 135px
+        text-decoration: none
+        
+
+    .addTo_like:hover, .addTo_like_2:hover
+        box-shadow: 0px 2px 4px 2px #f7f5f5a1
+        transition: 0.2s
+
+    .addTo_like>img
+        display: flex
+        margin-left: 20px
+        align-items: center
+        width: 19px
+        height: 19px
+        filter: invert(100%)
+
+    .addTo_like_2>img
+        display: flex
+        margin-left: 20px
+        align-items: center
+        width: 15px
+        height: 15px
+        filter: invert(100%)
+
+
+    .Product_Discription 
+        text-decoration: none
+        margin: 14px
+
+
+    .productname 
+        color: #6f6e6e;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+
+    .price 
+        font-family: 'Lato'
+        font-size: 16px
+        font-weight: bold
+        color: $C-pinc
+        text-align: left
+        text-transform: uppercase
+        margin-top: 17px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .rating-area 
+            overflow: hidden
+            width: 65px
+            margin: 0 auto
+            display: flex
+            flex-direction: row-reverse
+            justify-content: left
+            margin-bottom: 5px
+            
+        .rating-area:not(:checked)>input 
+            display: none
+    
+    
+        .rating-area:not(:checked)>label 
+            width: 13px
+            padding: 0
+            cursor: pointer
+            font-size: 17px
+            line-height: 17px
+            color: lightgrey
+            text-shadow: 1px 1px #bbb
+    
+    
+        .rating-area:not(:checked)>label:before 
+        
+            content: '★'
+    
+    
+        .rating-area>input:checked~label 
+            color: gold
+            text-shadow: 1px 1px #c60
+    
+    
+        .rating-area:not(:checked)>label:hover,
+        .rating-area:not(:checked)>label:hover~label 
+            color: gold
+    
+    
+        .rating-area>input:checked+label:hover,
+        .rating-area>input:checked+label:hover~label,
+        .rating-area>input:checked~label:hover,
+        .rating-area>input:checked~label:hover~label,
+        .rating-area>label:hover~input:checked~label 
+            color: gold
+            text-shadow: 1px 1px goldenrod
+    
+    
+        .rate-area>label:active 
+
+.button2 
+    display: block
+    height: 45px
+    width: 212px
+    background-color: $C-pinc
+    align-items: center
+    margin-left: 462px
+    margin-top: 79px
+
+
+    a 
+        display: block
+        font-family: 'Lato'
+        font-size: 16px
+        font-weight: bold
+        color: #ffffff
+        text-align: center
+        letter-spacing: 0.03em
+        line-height: 45px
+        text-decoration: none
+        text-align: center
+
+
+    a:hover 
+        transition: 0.5s
+        background-color: #f35466
+        box-shadow: 0px 0px 2px 0px #000000
+
+.PromoBox_2 
+    height: 529px
+    width: 1140px
+    margin-top: 113px
+    margin-bottom: 97px
+
+
+    .Link_on_PromoBox_2 
+        display: flex
+        text-decoration: none
+
+
+    .Link_on_PromoBox_2:hover 
+        transition: 0.5s
+        filter: brightness(115%)
+
+
+    .PromoBox_Elements 
+        display: flex
+        padding-left: 36px
+        padding-right: 43px
+        padding-top: -40px
+        background-color: #222224
+        flex-direction: column
+        padding-top: 15px
+
+
+    .Offer 
+        position: absolute
+        padding-top: 139px
+        padding-left: 39px
+        width: 300px
+        height: 78px
+        color: #ffffff
+        font-family: Lato
+        font-size: 54px
+        font-weight: 700
+        text-transform: uppercase
+        line-height: 45px
+
+
+    .redT 
+        color: $C-pinc
+        letter-spacing: 1.5px
+
+
+    .FWT 
+        font-size: 32px
+        letter-spacing: 0.9px
+
+
+    .PromoBox_Element 
+        height: 176px
+        display: flex
+        align-items: center
+        margin-top: -15px
+
+
+    .PromoBox_Element>img 
+        padding-bottom: 65px
+
+
+    .Element_Text 
+        padding-left: 36px
+
+
+    .Element_Text>h4 
+        color: #fbfbfb
+        font-family: Lato
+        font-size: 20px
+        font-weight: 700
+
+
+    .Element_Text>p 
+        margin-top: -15px
+        color: #fbfbfb
+        font-family: Lato
+        font-size: 14px
+        font-weight: 300
+        line-height: 24px
+
+.Subscribe_Block 
+    background-image: url(img/Subscribe.png)
+    width: 1618px
+    height: 438px
+    background-repeat: no-repeat
+    background-position: center 0
+    margin: auto
+    display: flex
+
+
+    .Subscribe_left 
+        padding-left: 160px
+        padding-right: 15px
+        display: flex
+        width: 635px
+        align-items: center
+        color: #222224
+        font-family: Lato
+        font-size: 16px
+        line-height: 26px
+        margin-bottom: 100px
+
+
+    .Subscribe_left>img 
+        margin-bottom: 50px
+
+
+    .Subscribe_Text 
+        margin-left: -50px
+        width: 390px
+        height: 114px
+
+
+    .Subscribe_Text>p 
+        color: $C-pinc
+        font-family: Lato
+        font-size: 16px
+        font-weight: 700
+        /* Text style for "Bin Burhan" */
+        font-family: "Lato - Bold"
+        font-weight: 700
+        letter-spacing: 0.4px
+        line-height: 26px
+        margin-bottom: -10px
+        margin-top: 5px
+
+
+    .Subscribe_Dhaka 
+        color: #222224
+        font-family: "Lato Light"
+        font-size: 12px
+        font-weight: 300
+        letter-spacing: 0.3px
+
+
+    .Slider>input 
+        position: absolute
+        z-index: 2
+
+
+    .form 
+        width: 400px
+
+
+    .radio-container 
+        display: flex
+        justify-content: flex-start
+        font-family: sans-serif
+
+
+    .radio-container * 
+        margin-top: 20px
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+
+
+    .radio-container .radio-btn 
+        overflow: hidden
+
+
+    .radio-container .radio-btn 
+        width: 55px
+
+
+
+    .radio-container .radio-btn label 
+        background: linear-gradient(to bottom, #f8f8fa 0%, #c8c8c7 100%)
+        display: block
+        width: 38px
+        padding: 2px
+        color: #7e7e7e
+        cursor: pointer
+
+
+    .radio-container .radio-btn input 
+        display: none
+
+
+    .radio-container .radio-btn input:checked+label 
+        background: linear-gradient(to bottom, $C-pinc 0%, $C-pinc 100%)
+        color: #fff
+
+
+    .Subscribe_right 
+        display: flex
+        flex-wrap: nowrap
+        justify-content: center
+        flex-direction: column
+        width: 334px
+        height: 122px
+        margin-left: 120px
+        margin-top: 128px
+
+
+    .Subscribe_right>p 
+        /* Style for "Subscribe" */
+        color: #222224
+        font-family: Lato
+        font-size: 14px
+        font-weight: 500
+        /* Text style for "Subscribe" */
+        font-size: 24px
+        letter-spacing: 0.6px
+        line-height: 1px
+        text-transform: uppercase
+        text-align: center
+        padding-right: 30px
+
+
+    .Subscribe_right>.FOR_OUR 
+        color: #222224
+        font-family: Lato
+        font-size: 24px
+        letter-spacing: 0.35px
+        line-height: 24px
+        font-weight: 500
+
+        text-align: center
+        font-weight: 600
+
+
+    .form_for_email 
+        display: flex
+        width: 386px
+        height: 46px
+        border-radius: 23px
+        background-color: #e1e1e1
+        margin-top: 35px
+        margin-left: -35px
+
+
+    .form_for_email>.email 
+        width: 334px
+        border-radius: 23px 0px 0px 23px
+        background-color: #e1e1e1
+        border: none
+        padding-left: 30px
+        align-items: center
+        /* Style for "Enter Your" */
+        font-weight: bold
+        opacity: 0.67
+        color: #222224
+        font-family: Lato
+        font-size: 14px
+        font-weight: 650
+        line-height: 54px
+
+
+    .form_for_email>.email:focus 
+        background-color: #ffffffd0
+        transition: 0.5s
+        box-shadow: 1px 0px 3px 1px #fc414156
+        outline: none
+
+
+    .button3 
+        width: 114px
+        height: 46px
+        border-radius: 0 23px 23px 0
+        background-color: $C-pinc
+        border: none
+        display: block
+        /* Style for "Subscribe" */
+        color: #ffffff
+        font-family: Lato
+        font-size: 14px
+        font-weight: 400
+        line-height: 54px
+        /* Text style for "Subscribe" */
+        letter-spacing: 0.35px
+        text-decoration: none
+        text-align: center
+        line-height: 45px
+
+
+    .button3:hover 
+        transition: 0.5s
+        background-color: #f35466
+        box-shadow: 0px 0px 2px 0px #000000
+        cursor: pointer
+
+footer 
+    height: 517px
+    width: 1600px
+    margin: 0 auto
+
+
+    .footer_top 
+        height: 458px
+        width: 1600px
+        display: flex
+        margin: 0 auto
+
+
+
+    .footer_text 
+        width: 450px
+        padding-top: 123px
+        padding-left: 229px
+
+
+    .footer_text_text 
+        width: 427px
+        height: 180px
+        /* Style for "Objectivel" */
+        color: #898989
+        font-family: Lato
+        font-size: 14px
+        font-weight: 300
+        line-height: 24px
+
+
+    .footer_menu 
+        width: 900px
+        height: 458px
+
+
+    .footer_menu_ul 
+        display: flex
+
+
+    .footer_menu_ul>.footer_li_1 
+        display: inline
+        padding-top: 129px
+        margin-right: 80px
+
+
+    .padding_menu 
+        padding-left: 57px
+
+
+    .footer_li_1>a 
+        text-decoration: none
+        /* Style for "INFORMATIO" */
+        color: $C-pinc
+        font-family: Lato
+        font-size: 18px
+        font-weight: 700
+        line-height: 26px
+        text-transform: uppercase
+        /* Text style for "I, NFORMAT" */
+        letter-spacing: 0.45px
+
+
+    .footer_li_1>a:hover 
+        transition: 0.7s
+        color: #898989
+
+
+
+    .footer_li_1>ul 
+        margin-top: 49px
+
+
+    .footer_li_2 
+        list-style-type: none
+        margin-left: -40px
+
+
+    .footer_li_2>a 
+        text-decoration: none
+        color: #898989
+        font-family: Lato
+        font-size: 16px
+        font-weight: 400
+        /* Text style for "Home" */
+        letter-spacing: 0.4px
+        line-height: 59px
+        /* Text style for "Shop , Abo" */
+        letter-spacing: 0.4px
+        line-height: 42px
+        text-transform: none
+
+
+    .footer_li_2>a:hover 
+        transition: 0.7s
+        color: $C-pinc
+
+
+    .Footer_down 
+        width: 1617px
+        height: 79px
+        background-color: #e6e6e6
+        display: flex
+        align-items: center
+
+
+    .CopyRight 
+        margin-left: 238px
+        color: #7a7a7a
+        font-family: Lato
+        font-size: 16px
+        font-weight: 400
+        line-height: 42px
+
+
+    .social 
+        display: flex
+        width: 188px
+        height: 32px
+        margin-left: 700px
+
+
+    .social_block 
+        display: block
+        width: 32px
+        height: 32px
+        background-color: #ffffff
+        margin-right: 8px
+        text-align: center
+        line-height: 32px
+
+
+    .social_block>i 
+        color: grey
+        text-align: center
+
+
+    .social>a:hover .social_block 
+        transition: 0.5s
+        background-color: $C-pinc
+
+
+    .social>a:hover .social_block>i 
+        transition: 0.9s
+        color: white
+
+
+    .social>a:visited .social_block 
+        transition: 0.5s
+        background-color: #ededed
+        border: 1px solid black
+        color: white
+
+
+    .social>a:visited:hover .social_block>i 
+        transition: 0.9s
+        color: rgb(224, 160, 160)
+
+
+/* ------------------------Cтраница PROduct------------------------ */
+
+
+.menu_product 
+    
+    height: 148px
+    display: flex
+    justify-content: space-between
+    background-color: #f8f3f4
+    align-items: center
+
+
+    .arrival 
+        font-family: 'Lato'
+        font-size: 24px
+        font-weight: 900
+        color: $C-pinc
+        text-align: center
+        line-height: 20px
+        text-transform: uppercase
+
+
+
+    .menu_product_nav_list 
+        list-style-type: none
+        display: flex
+
+
+    .menu_product_nav_list_li>a 
+        text-decoration: none
+        padding-right: 2px
+
+        /*Text styles for "Home / Men" */
+        font-family: 'Lato'
+        font-size: 14px
+        font-weight: 300
+        color: #636363
+        text-align: center
+        line-height: 20px
+        text-transform: uppercase
+
+
+
+    .menu_product_active>a 
+        font-weight: bold
+        color: $C-pinc
+
+
+    .menu_product_nav_list_li>a:hover 
+        transition: .3s
+        color: $C-pinc
+        
+                
+.contentPage 
+    display: flex
+    justify-content: space-between
+    margin-top: 60px
+    
+    .contentPage_ac 
+        width: 200px 
+        margin-right: 50px
+        
+
+        label 
+            display: inline-block
+            width: 200px
+            padding: 5px 20px 
+            height: 30px 
+            cursor: pointer 
+            // для текста
+            font-family: 'Lato'
+            font-size: 14px
+            font-weight: bold
+            color: #6f6e6e
+            line-height: 25px
+            text-transform: uppercase
+            border-left: 5px solid #ef5b70;
+            border-bottom: 1px solid #ebebeb;
+               
+
+        input:checked+label,  
+            color: #3d7489 
+            text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6)  
+            font-family: 'Lato';
+            font-size: 14px
+            font-weight: bold
+            color: #ef5b70
+            line-height: 25px
+            text-transform: uppercase    
+
+        label:hover
+            color: #ef5b70
+            transition: 0.3s
+
+        input
+            display: none
+
+        input:checked ~ article
+            transition: height 0.6s ease-in-out, box-shadow 0.6s linear
+            height: 480px
+
+        article
+            overflow: hidden
+            position: releative
+            z-index: 10
+            height: 0px
+            transition: height 0.6s ease-in-out, box-shadow 0.6s linear
+            
+            ul 
+                list-style-type: none
+                margin-left: -15px
+
+                a 
+                    text-decoration: none
+                    font-family: 'Lato'
+                    font-size: 14px
+                    color: #6f6e6e
+                    line-height: 33px 
+
+                a:hover 
+                    color: #ef5b70
+                    transition: 0.3s
+        
+           
+    .contantPage_Filters_and_Products
+        display: flex
+        flex-direction: column
+        margin-left: 35px
+
+        .contentPage_Filters
+
+            .filters_top
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+                flex-direction: row
+                
+                .filters_top_Trading
+                    margin-right: 90px
+
+                    p
+                        font-family: 'Lato';
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: #6f6e6e;
+                        line-height: 20px;
+                        text-transform: uppercase;
+            
+                    ul 
+                        list-style-type: none
+                        color: red
+                        display: flex
+                        text-align: left
+                        padding: 0px
+                        margin-left: -5px
+                    
+                        a
+                            text-decoration: none
+                            border-right: 1px solid #dfdfdf
+                            font-family: 'Lato'
+                            font-size: 14px
+                            color: #6f6e6e
+                            padding: 0px 5px
+                        
+                        a:hover 
+                            color: $C-pinc
+                            transition: 0.3s
+        
+                .filters_top_sizes
+                    
+                    
+                    p 
+                          
+                        font-family: 'Lato'
+                        font-size: 14px
+                        font-weight: bold
+                        color: #6f6e6e
+                        line-height: 20px
+                        text-transform: uppercase   
+                    
+
+                    form
+                        display: flex
+                        width: 350px
+                        flex-direction: row
+                        align-items: center
+                        
+                        margin-top: -15px
+                        
+
+                        p 
+                            font-family: 'OpenSans';
+                            font-size: 14px;
+                            color: #6f6e6e;
+                            line-height: 20px;
+                            text-transform: uppercase;
+                            margin-left: 3px
+                            padding-right: 30px
+                            cursor: default
+                  
+                         
+                        .check
+                            width: 13px
+                            height: 13px
+                            border: 1px solid #ddd7d7b9  
+                            margin: 2px     
+                            display: flex
+                            flex-wrap: nowrap   
+
+                        .check:hover
+                            background-color: #ddd7d777     
+                            transition: 0.4s 
+                            cursor: pointer                      
+  
+                        input 
+                            display: none
+                                           
+
+                            &:checked + .box 
+                                background-color: $C-pinc
+                                border-radius: 30%
+                                width: 50%
+                                height: 50%
+                                align-items: center
+                                margin-left: 25%
+                                margin-top: 25%
+                                
+                            &:hover
+                                background-color: #1a1616
+                                cursor: pointer
+
+                            &:after 
+                                border: 1px solid black
+                                
+                .filters_top_prise
+                   
+
+                    .slidecontainer 
+                        width: 250px
+
+                        p  
+                            font-family: 'Lato'
+                            font-size: 14px
+                            font-weight: bold
+                            color: #6f6e6e
+                            line-height: 20px
+                            text-transform: uppercase
+                            
+                    
+
+                        .slider 
+                            -webkit-appearance: none
+                            width: 100%
+                            height: 5px
+                            background: #d3d3d3
+                            outline: none
+                            opacity: 0.7
+                            -webkit-transition: .2s
+                            transition: opacity .2s
+                            opacity: 1
+ 
+                        
+
+                        .slider:hover 
+                            opacity: 1
+                        
+
+                        .slider::-webkit-slider-thumb 
+                            -webkit-appearance: none
+                            appearance: none
+                            width: 15px
+                            height: 15px
+                            border-radius: 50%
+                            background: $C-pinc
+                            cursor: pointer
+                        
+
+            .filter_down
+                height: 50px
+                background-color: #f3f3f3    
+                margin-bottom: 20px
+                display: flex
+                align-items: center
+                
+                     
+                .sortbyname
+                    display: flex
+                    margin-left: 9px
+                    color: #6f6e6e;
+            
+
+                    .SortBy_link
+                        text-decoration: none
+                        display: block
+                        width: 80px
+                        height: 30px
+                        background-color: #ffffff
+                        text-align: center
+                        line-height: 30px
+                        font-family: 'Lato';
+                        font-size: 14px;
+                        color: #6f6e6e;
+                        border-right: 1px solid #6f6e6e77
+                        
+                    .SortBy_link:hover
+                         color: $C-pinc
+                         transition: 0.3s
+
+                    select   
+                        display: block
+                        width: 70px
+                        height: 30px
+                        background-color: #ffffff
+                        text-align: center
+                        line-height: 30px
+                        border: 1px solid white;
+                        outline-color: $C-pinc          
+                        font-family: 'Lato'
+                        font-size: 14px
+                        color: #6f6e6e
+                        line-height: 26px
+                        padding: 5px
+
+                    select:hover 
+                        transition: 0.3s
+                        color: $C-pinc
+                        outline: none
+                    
+                    select:focus  option
+                        color: #6f6e6e;
+                        outline: none;
+
+                    select:focus
+                        color: $C-pinc;
+                        outline: none;
+
+                        option:hover                      
+                            background-color: none
+                            color: $C-pinc
+                         
+
+                        option                            
+                             background-color: #d1cbcb2d
+
+        .pagination_and_botton
+            display: flex
+            justify-content: space-between
+
+
+            .pagination
+                width: 261px
+                height: 44px
+                border-radius: 3px
+                border: 1px solid #ebebeb
+                background-color: #ffffff
+                align-items: center
+                display: flex
+                vertical-align: center
+                justify-content: center
+                
+
+                ul
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    padding: 0px
+                    margin: 0px
+                    
+                    li
+                        border: 0px
+                        margin: 0px
+                        padding: 0px
+                        font-size: 11px
+                        list-style: none
+                        color: #c4c4c4
+                        
+                    
+                        a:link, a:visited
+                            text-decoration: none
+                            font-size: 16px
+                            font-weight: bold
+                            line-height: 26p
+                            color:#c4c4c4
+                            display: block
+                            padding: 3px 6px
+                            margin-right: 5px
+
+                        a:hover
+                            color: $C-pinc
+                            transition: 0.3s
+
+                                        
+                    .previous-off ul .next 
+                        display: block
+                        float: left
+                        font-weight: bold
+                        padding: 3px 4px
+                                    
+                    .next a, .previous-off a 
+                        font-weight: bold
+                        color: #c4c4c4
+                        width: 20px
+                        height: 20px
+                        line-height: 18px
+                        font-weight: 3000
+                        font-family: 'tahoma'        
+                        
+                    .active
+                        color: $C-pinc
+                        font-family: Lato
+                        font-size: 16px
+                        font-weight: bold
+                        line-height: 26px
+                        margin-right: 10px
+                            
+            .viewAll
+                display: block
+                width: 150px
+                height: 44px
+                border-radius: 3px
+                border: 1px solid #ef5b70
+                background-color: #ffffff
+                color: #ef5b70
+                font-family: Lato
+                font-size: 16px
+                font-weight: bold
+                line-height: 26px
+                text-decoration: none
+                text-align: center
+                line-height: 40px
+
+            .viewAll:hover
+                box-shadow: 0px 0px 6px 0px #ef5b70
+                transition: .3s
+                                                                                
+.PromoBox_2_productpage 
+    width: 1600px
+    margin: auto
+    
+    .Link_on_PromoBox_2_product
+        display: flex
+        height: 341px
+        background-color: #222224
+        margin-top: 150px
+        margin-bottom: 50px
+        text-decoration: none
+        color: #fbfbfb
+        
+        .PromoBox_Elements_2_productpage
+            display: flex
+            justify-content: space-around
+            align-items: center
+            
+            .PromoBox_Element_2_productpage
+                display: flex
+                align-items: flex-start
+                flex-direction: column
+                width: 308px
+                align-items: center
+                text-align: center
+                padding-right: 32px
+                padding-left: 32px
+       
+
+/* ------------------------Cтраница Single Page------------------------- */
+    
+
+.Single_page_Slider
+    width: 1607px
+    height: 777px
+    border: 1px solid #eaeaea
+    background-color: #f7f7f7
+    margin: 0px auto
+    position: relative
+    
+
+    #slider-wrap
+        width: 1607px
+        height: 777px
+        margin: 0px auto
+        
+
+        #slider 
+        	width: 1607px
+            height: 777px
+
+        .slide
+        	width: 100%
+        	height: 100%
+            margin: 0px auto
+            
+    .slider_preview_next
+        content: ''
+        width: 1607px
+        height: 47px;
+        position: absolute
+        margin-top: -450px
+        display: flex
+        justify-content: space-between
+
+        a:hover 
+            transition: 0.5s
+            background-color: #f35466
+            box-shadow: 0px 0px 3px 0px #000000
+
+        .preview, .next
+            width: 47px 
+            height: 47px
+            background-color: #7e7b7b60
+            display: flex
+            justify-content: center
+            align-items: center
+            
+            img
+                filter: invert(100%)
+
+.Single_page_content
+    height: 1289px
+    width: 1607px
+    margin: 0px auto
+    display: flex
+    justify-content: center
+    position: relative
+
+    .SP_Product_discription
+        width: 1141px
+        height: 730px
+        border: 1px solid #eaeaea
+        background-color: #ffffff  
+        position: absolute
+        margin-top: -80px      
+                
+        .SP_Product_discription_top
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: 73px 261px
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 43px
+
+            h2 
+                color: #f16d7f
+                font-family: Lato
+                font-size: 14px
+                font-weight: 700
+                line-height: 24px
+                text-transform: uppercase
+                border-bottom: 2px solid $C-pinc
+                padding-bottom: 14px
+
+            h3 
+                color: #4d4d4d;
+                font-family: "Lato - Black";
+                font-size: 18px;
+                font-weight: bold
+                line-height: 24px;
+                text-transform: uppercase;
+                margin-bottom: 24px
+
+            .rating
+                .rating-area 
+                    overflow: hidden
+                    width: 120px
+                    margin: 0 auto
+                    display: flex
+                    flex-direction: row-reverse
+                    justify-content: left
+                    margin-top: 5px
+                    margin-left: -1px
+
+
+                .rating-area:not(:checked)>input 
+                    display: none
+
+
+                .rating-area:not(:checked)>label 
+                    width: 20px
+                    padding: 0
+                    cursor: pointer
+                    font-size: 25px
+                    line-height: 17px
+                    color: lightgrey
+                    text-shadow: 1px 1px #bbb
+
+
+                .rating-area:not(:checked)>label:before 
+
+                    content: '★'
+
+
+                .rating-area>input:checked~label 
+                    color: gold
+                    text-shadow: 1px 1px #c60
+
+
+                .rating-area:not(:checked)>label:hover,
+                .rating-area:not(:checked)>label:hover~label 
+                    color: gold
+
+
+                .rating-area>input:checked+label:hover,
+                .rating-area>input:checked+label:hover~label,
+                .rating-area>input:checked~label:hover,
+                .rating-area>input:checked~label:hover~label,
+                .rating-area>label:hover~input:checked~label 
+                    color: gold
+                    text-shadow: 1px 1px goldenrod
+
+
+                .rate-area>label:active 
+
+            p 
+                color: #5e5e5e;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 24px;   
+                text-align: center  
+                margin-bottom: -10px   
+                margin-top: 26px  
+
+
+            .character
+                display: flex
+                justify-content: space-between
+                .character_left, .character_right
+                    padding: 22px
+                    color: #b9b9b9;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    text-transform: uppercase;
+
+                    span
+                        color: #2f2f2f;
+               
+            .price
+                color: #ef5b70;
+                font-family: Lato;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 24px;
+    
+    
+        .SP_Product_discription_botton
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: 73px 261px
+
+            form
+                display: flex
+
+                .CHOOSE_color, .CHOOSE_size, .QUANTITY 
+                    display: flex
+                    flex-direction: column
+                    width: 164px
+                    height: 61px 
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    text-transform: uppercase; 
+
+                    .size, .color
+                        width: 144px;
+                        height: 35px;
+                        border: 1px solid #eaeaea;
+                        background-color: #ffffff;                                    
+                        outline-color: $C-pinc          
+                        font-family: 'Lato'
+                        
+                        .red
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 24px;
+
+                input
+                    width: 144px;
+                    height: 30px;
+                    border: 1px solid #eaeaea;
+                    background-color: #ffffff;
+                    outline-color: $C-pinc   
+                    padding: 1px 5px     
+                    color: #bcbcbc;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+
+                input::-webkit-input-placeholder
+                    color: green
+                    color: #bcbcbc
+                    font-family: Lato
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 24px
+
+        .SP_Product_discription_botton_botton
+            margin-top: 21px
+            
+
+            a         
+                text-decoration: none
+                display: flex
+                width: 537px
+                height: 55px
+                border: 1px solid #ef5b70
+                background-color: #ffffff 
+                color: #ef5b70
+                font-family: Lato
+                font-size: 16px
+                font-weight: 700
+                justify-content: center
+                align-items: center
+
+            a:hover
+                border-color: $C-pinc
+                color: $C-pinc
+                box-shadow: 0px 0px 6px 0px #ef5b70
+                transition: .3s
