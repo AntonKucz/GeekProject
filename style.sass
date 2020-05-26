@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 $C-pinc: #f16d7f
 
 .body 
@@ -5,12 +7,13 @@ $C-pinc: #f16d7f
     padding: 0
 
 .center 
-    padding: 0 calc(50% - 570px)
+    padding: 0 calc(50% - 600px)
 
 .logo 
     display: flex
     align-items: center
     text-decoration: none
+    margin-left: 0px
 
     .Brand_link 
         text-decoration: none
@@ -43,166 +46,155 @@ header
     justify-content: space-between
     height: 100px
     border-bottom: 1px solid #ececec
-    position: relative
+    position: relative 
 
-    .search 
+    .search
         display: flex
-        border-radius: 3px 3px 3px 3px
+        list-style-type: none
+        padding: 0px
         margin-left: 37px
-        align-items: center
+        margin-right: 350px
 
+        .searchlist:hover .Browse_droplist
+            visibility: visible
+            opacity: 1
+            transition: opacity 4s ease-in
+            transition-duration: .3s
+                          
+        .searchlist:hover
+            box-shadow: 0px 0px 5px -1px #a59494c5
+            z-index: 1
+            
+        .searchlist 
+            border-radius: 3px 3px 3px 3px
+            box-shadow: 0px 0px 0px 0px #ffffffad
+            transition:  .4s 
+                   
+            .Browse:hover
+                transition: .3s 
+                color: #f16d7f
 
-    .Browse 
-        height: 38px
-        width: 87px
-        text-decoration: none
-        font-family: 'Lato'
-        font-size: 14px
-        font-weight: 300
-        color: #222222
-        letter-spacing: 0.03em
-        line-height: 37px
-        border: 1px solid #e6e6e6
-        border-radius: 3px 0px 0px 3px
-        background-image: -webkit-linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%)
-        display: block
-        text-align: center
-        position: relative
-        margin-bottom: 20px
-        list-style-type: none
-        padding-left: 0px
-        margin-top: 20px
+            .Browse:after
+                content: '\25BE'
+                display: block
+                margin-left: -10px
+                
+            .Browse
+                display: flex
+                align-items: center
+                justify-content: space-around
+                text-decoration: none
+                width: 87px
+                height: 38px
+                background-color: #cdcdcc
+                background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
+                color: #222222
+                font-family: 'Lato'
+                font-size: 14px
+                font-weight: 300
+                line-height: 32px
+                border: none
+                border-right: 1px solid #e6e6e6
+                border: 1px solid #e6e6e6
+                border-radius: 3px 0px 0px 3px
+                transition: .3s 
+                 
+            .Browse_droplist
+                visibility: hidden
+                list-style-type: none
+                background-color: #ffffff
+                position: absolute
+                z-index: 1
+                padding: 0 13px
+                margin: 0
+                opacity: 0
+                 
+                margin-top: 0px
+                border-radius: 5px
+                border: .5px solid #e6e6e6
+                                
+                .Browse_droplist_elements
+                                 
+                    .Browse_droplist_elements_links:hover
+                        color: $C-pinc
+                    
+                    .Browse_droplist_elements_links
+                        text-decoration: none
+                        display: flex
+                        border-bottom: 1px solid #e8e8e8
+                        width: 236px
+                        color: #232323
+                        font-family: 'Lato'
+                        font-size: 14px
+                        font-weight: bold
+                        line-height: 32px
+                        padding-top: 19px
+                        text-transform: uppercase
+                        transition: .3s
 
+                    .Browse_droplist_elements_list
+                        list-style-type: none
+                        padding: 0
+                        margin: 0
+                        margin-top: 16px
+                        padding-left: 7px
 
-    .Browse_link 
-        color: #222222
+                        .Browse_droplist_elements_list_link:hover
+                            color: $C-pinc
 
+                        .Browse_droplist_elements_list_link
+                            display: block
+                            text-decoration: none
+                            color: #4f4f4f
+                            font-family: 'Lato'
+                            font-size: 14px
+                            font-weight: 400
+                            line-height: 28px
+                            transition: 0.3s
 
-    .Browse>a 
+            .searchlist_input:hover           
 
-    .Browse>li>a 
-        text-decoration: none
-        display: block
+            .searchlist_input
+                width: 257px
+                height: 36px
+                border: 1px solid #e6e6e6
+                background-color: #ffffff
+                outline: none
+                border: none
+                border-right: 1px solid #e6e6e6
+                padding-left: 16px
+                color: #a4a4a4
+                font-family: 'Lato'
+                font-size: 14px
+                font-weight: 300
+                line-height: 32px
+                transform: .3s
+                z-index: 2
+                border: 1px solid #e6e6e6
+                
 
-    .Browse>li>a:after
-        content: '\25BC'
-        font-size: 9px
-        color: #222222
-        font-family: 'arial black'
-        font-weight: bold
-        
+            .searchlist_input::-webkit-input-placeholder 
+                color: #a4a4a4
+                font-family: 'Lato'
+                font-size: 14px
+                font-weight: 300
+                line-height: 32px
 
-    .Browse>li>a:hover 
-        transition: 0.5s
-        box-shadow: 0px 0px 10px 0px #837d7d56
-
-
-    .Browse:hover .Browse_list 
-        display: flex
-
-
-    #BrowseClick:after 
-        display: flex
-
-
-    .Browse_list 
-        display: none
-        flex-direction: column
-        list-style-type: none
-        height: 580px
-        width: 262px
-        background-color: #ffffff
-        border-radius: 5px
-        position: absolute
-        margin-top: 3px
-
-
-    .Browse_list_h 
-        width: 236px
-        display: block
-        font-family: 'Lato'
-        font-size: 14px
-        color: #161616
-        font-weight: bold
-        text-align: left
-        letter-spacing: 0.03em
-        line-height: 32px
-        text-transform: uppercase
-        border-bottom: 1px solid #e8e8e8
-        padding-bottom: 10px
-        margin-top: 15px
-        margin-right: 5px
-        margin-bottom: 10px
-
-
-
-    .Browse_list_a 
-        height: 253px
-        width: 311px
-        font-family: 'Lato'
-        font-size: 14px
-        color: #4f4f4f
-        text-align: left
-        letter-spacing: 0.03em
-        line-height: 28px
-
-
-    .Browse_list_a>a,
-    .Browse_list_h>a 
-        text-decoration: none
-        color: #161616
-        
-
-
-    .Browse_list_a>a:hover,
-    .Browse_list_h>a:hover 
-        color: $C-pinc
-
-
-    .search>input 
-        height: 36px
-        width: 280px
-        background-color: #ffffff
-        border: 1px solid #e6e6e6
-        padding-left: 10px
-        padding-right: 10px
-
-
-    .search>input:focus 
-        transition: 0.5s
-        box-shadow: 0px 0px 10px 0px #837d7d56
-        outline: none
-
-
-
-    .search>.lupa 
-        display: block
-        height: 38px
-        width: 36px
-        background-color: #ffffff
-        border: 1px solid #e6e6e6
-        border-radius: 0px 3px 3px 0px
-
-
-    .search>.lupa>img 
-        display: block
-        margin: auto
-        padding-top: 11px
-
-
-    .search>a:hover 
-        transition: 0.5s
-        box-shadow: 0px 0px 10px 0px #837d7d56
-
-
-    .basket 
-        display: flex
-        flex-direction: column
-        margin-left: 180px
+            .loupe
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 37px
+                height: 38px
+                background-color: #fffdfd;
+                border: 1px solid #e6e6e6
+                border-radius: 0px 3px 3px 0px
 
 
     .basket_ul 
         list-style-type: none
+        padding: 0px
+        
 
 
     .basket_il_drop 
@@ -232,6 +224,7 @@ header
         margin-left: -40px
         margin-top: 10px
         border-radius: 5px
+        z-index: 1
 
 
     .GoToCart_elements 
@@ -387,20 +380,22 @@ header
         height: 38px
         width: 130px
         background-color: $C-pinc
-        margin-left: 26Px
-        display: block
+        margin-left: 26px
+        display: flex
+        align-items: center
+        justify-content: center
+        
 
 
     .button>a 
         display: block
-        font-family: 'Lato'
-        font-size: 15px
         color: #ffffff
-        text-align: right
-        letter-spacing: 0.03em
-        line-height: 40px
+        font-family: 'Lato'
+        font-size: 14px
+        font-weight: 400
+        line-height: 32px
         text-decoration: none
-        text-align: center
+        
 
 
 
@@ -1376,8 +1371,7 @@ footer
     .menu_product_nav_list_li>a:hover 
         transition: .3s
         color: $C-pinc
-        
-                
+                       
 .contentPage 
     display: flex
     justify-content: space-between
@@ -1673,7 +1667,6 @@ footer
             display: flex
             justify-content: space-between
 
-
             .pagination
                 width: 261px
                 height: 44px
@@ -1700,6 +1693,13 @@ footer
                         font-size: 11px
                         list-style: none
                         color: #c4c4c4
+
+                        .pages
+                            color: #c4c4c4
+                            font-family: 'Lato'
+                            font-size: 16px
+                            font-weight: bold
+                            line-height: 26px
                         
                     
                         a:link, a:visited
@@ -1721,13 +1721,12 @@ footer
                         display: block
                         float: left
                         font-weight: bold
-                        padding: 3px 4px
+                        padding: 0px 
                                     
                     .next a, .previous-off a 
                         font-weight: bold
                         color: #c4c4c4
-                        width: 20px
-                        height: 20px
+                  
                         line-height: 18px
                         font-weight: 3000
                         font-family: 'tahoma'        
@@ -1969,8 +1968,7 @@ footer
                 font-size: 24px;
                 font-weight: 700;
                 line-height: 24px;
-    
-    
+      
         .SP_Product_discription_botton
             display: flex
             flex-direction: column
