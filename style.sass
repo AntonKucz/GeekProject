@@ -7,7 +7,7 @@ $C-pinc: #f16d7f
     padding: 0
 
 .center 
-    padding: 0 calc(50% - 600px)
+    padding: 0 calc(50% - 570px)
 
 .logo 
     display: flex
@@ -203,9 +203,11 @@ header
 
 
     .basket:hover .basket_img 
-        transition: 0.5s
+        
         filter: invert(40%)
 
+    .basket_img 
+        transition: 0.5s
 
     .basket:hover .GoToCart 
         display: flex
@@ -363,13 +365,14 @@ header
         text-align: center
         margin-top: 10px
         line-height: 50px
+        transition: .3s
 
 
     .GoToCart_buttons:hover 
         border-color: $C-pinc
         color: $C-pinc
         box-shadow: 0px 0px 6px 0px #ef5b70
-        transition: .3s
+        
 
 
     .GoToCart_buttons_link 
@@ -384,8 +387,8 @@ header
         display: flex
         align-items: center
         justify-content: center
+        transition: 0.5s
         
-
 
     .button>a 
         display: block
@@ -401,7 +404,6 @@ header
 
 
     .button:hover 
-        transition: 0.5s
         background-color: #f35466
         box-shadow: 0px 0px 2px 0px #000000
 
@@ -430,9 +432,10 @@ header
                 text-transform: uppercase
                 display: block
                 padding: 20px 20px
+                transition: 0.3s
 
             a:hover 
-                transition: 0.1s
+                
                 color: #9c9c9c
                 padding-top: 20px
                 position: relative
@@ -473,8 +476,10 @@ header
             margin-left: -35px
                 
         .image_link:hover
+            filter: brightness(105%)
+
+        .image_link:hover
             transition: .9s
-            filter: brightness(105%);
 
         .drop_flex
             h3 
@@ -504,10 +509,10 @@ header
                     text-decoration: none
                     padding: 8px 0px
                     text-transform: none
+                    transition: 0.3s
                 
                 
                 .drop_a:hover 
-                    transition: 0.3s
                     color: $C-pinc
         
             .drop_flex:not(:last-child) 
@@ -585,6 +590,9 @@ header
         transform: scale(1.01)
         box-shadow: 0px 0px 30px 1px #615f5f0e
 
+    .leftBox>a
+        transition: 0.7s
+
 
     .rihhtBox 
         display: flex
@@ -597,6 +605,8 @@ header
         transform: scale(1.01)
         box-shadow: 0px 0px 34px 1px #615f5f4b
 
+    .rihhtBox>a
+        transition: 0.7s
 
     .contentTextBox 
         display: flex
@@ -669,30 +679,30 @@ header
         display: flex
         flex-direction: column
         margin-bottom: 31px
-
-
+        transition: 0.3s
 
     .Product:hover 
         box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
-        transition: 0.2s
-
+        
+    .Product_Pic 
+        transition: 0.3s
 
     .Product:hover .Product_Pic 
         filter: brightness(40%) blur(.7px) contrast(80%); 
-        transition: 0.2s
+        
 
 
     .Product:hover .addTo
         display: flex
-        transition: 0.2s
+        
 
     .Product:hover .addTo_like 
         display: flex
-        transition: 0.2s
+        
 
     .Product:hover .addTo_like_2 
         display: flex
-        transition: 0.2s
+        
 
     .addTo 
         position: absolute
@@ -708,6 +718,7 @@ header
         margin-top: 97px
         margin-left: 70px
         text-decoration: none
+        transition: 0.3s
 
 
     .addTo>img 
@@ -719,7 +730,7 @@ header
 
     .addTo:hover 
         box-shadow: 0px 2px 4px 2px #f7f5f5a1
-        transition: 0.2s
+        
 
 
     .addTo_like
@@ -736,6 +747,7 @@ header
         margin-top: 145px
         margin-left: 70px
         text-decoration: none
+        transition: 0.3s
 
     .addTo_like_2
         position: absolute
@@ -751,11 +763,12 @@ header
         margin-top: 145px
         margin-left: 135px
         text-decoration: none
+        transition: 0.3s
         
 
     .addTo_like:hover, .addTo_like_2:hover
         box-shadow: 0px 2px 4px 2px #f7f5f5a1
-        transition: 0.2s
+        
 
     .addTo_like>img
         display: flex
@@ -869,10 +882,9 @@ header
         line-height: 45px
         text-decoration: none
         text-align: center
-
-
-    a:hover 
         transition: 0.5s
+
+    a:hover      
         background-color: #f35466
         box-shadow: 0px 0px 2px 0px #000000
 
@@ -886,10 +898,10 @@ header
     .Link_on_PromoBox_2 
         display: flex
         text-decoration: none
+        transition: 0.5s
 
 
     .Link_on_PromoBox_2:hover 
-        transition: 0.5s
         filter: brightness(115%)
 
 
@@ -1145,10 +1157,10 @@ header
         text-decoration: none
         text-align: center
         line-height: 45px
+        transition: 0.5s
 
 
     .button3:hover 
-        transition: 0.5s
         background-color: #f35466
         box-shadow: 0px 0px 2px 0px #000000
         cursor: pointer
@@ -1211,10 +1223,10 @@ footer
         line-height: 26px
         text-transform: uppercase
         letter-spacing: 0.45px
+        transition: 0.3s
 
 
     .footer_li_1>a:hover 
-        transition: 0.7s
         color: #898989
 
 
@@ -1239,10 +1251,10 @@ footer
         letter-spacing: 0.4px
         line-height: 42px
         text-transform: none
+        transition: 0.3s
 
 
     .footer_li_2>a:hover 
-        transition: 0.7s
         color: $C-pinc
 
 
@@ -1351,10 +1363,10 @@ footer
     .menu_product_active>a 
         font-weight: bold
         color: $C-pinc
+        transition: .3s
 
 
     .menu_product_nav_list_li>a:hover 
-        transition: .3s
         color: $C-pinc
                        
 .contentPage 
@@ -1390,11 +1402,12 @@ footer
             font-weight: bold
             color: #ef5b70
             line-height: 25px
-            text-transform: uppercase    
+            text-transform: uppercase 
+            transition: 0.3s   
 
         label:hover
             color: #ef5b70
-            transition: 0.3s
+            
 
         input
             display: none
@@ -1420,10 +1433,11 @@ footer
                     font-size: 14px
                     color: #6f6e6e
                     line-height: 33px 
+                    transition: 0.3s
 
                 a:hover 
                     color: #ef5b70
-                    transition: 0.3s
+                    
         
            
     .contantPage_Filters_and_Products
@@ -1510,10 +1524,10 @@ footer
                             margin: 2px     
                             display: flex
                             flex-wrap: nowrap   
+                            transition: 0.4s 
 
                         .check:hover
                             background-color: #ddd7d777     
-                            transition: 0.4s 
                             cursor: pointer                      
   
                         input 
@@ -1605,10 +1619,11 @@ footer
                         font-size: 14px;
                         color: #6f6e6e;
                         border-right: 1px solid #6f6e6e77
+                        transition: 0.3s
                         
                     .SortBy_link:hover
                         color: $C-pinc
-                        transition: 0.3s
+                        
 
                     select   
                         display: block
@@ -1624,9 +1639,9 @@ footer
                         color: #6f6e6e
                         line-height: 26px
                         padding: 5px
-
-                    select:hover 
                         transition: 0.3s
+
+                    select:hover           
                         color: $C-pinc
                         outline: none
                     
@@ -1697,6 +1712,9 @@ footer
 
                         a:hover
                             color: $C-pinc
+                            
+
+                        a
                             transition: 0.3s
 
                                         
@@ -1737,10 +1755,11 @@ footer
                 text-decoration: none
                 text-align: center
                 line-height: 40px
+                transition: .3s
 
             .viewAll:hover
                 box-shadow: 0px 0px 6px 0px #ef5b70
-                transition: .3s
+                
                                                                                 
 .PromoBox_2_productpage 
     width: 1600px
@@ -1807,10 +1826,12 @@ footer
         display: flex
         justify-content: space-between
 
-        a:hover 
-            transition: 0.5s
+        a:hover            
             background-color: #f35466
             box-shadow: 0px 0px 3px 0px #000000
+
+        a
+            transition: 0.5s
 
         .preview, .next
             width: 47px 
@@ -2024,12 +2045,13 @@ footer
                 font-weight: 700
                 justify-content: center
                 align-items: center
+                transition: .3s
 
             a:hover
                 border-color: $C-pinc
                 color: $C-pinc
                 box-shadow: 0px 0px 6px 0px #ef5b70
-                transition: .3s
+                
 
 .you_may
     text-align: center
@@ -2051,17 +2073,19 @@ footer
 
 .SC_product_box 
     display: flex
+    
 
     .SC_product_list
         list-style-type: none
         display: flex
         flex-direction: column
         flex-wrap: wrap
+        
        
-       
-
         .SC_product_list_item
             display: flex
+            max-width: 1140px
+            min-width: 200px
             align-items: center
             flex-wrap: wrap
             padding: 25px 0px 
@@ -2100,6 +2124,9 @@ footer
                 font-weight: 400
                 line-height: 20px
 
+            .fa-times-circle:hover
+                color: #8d8585
+
             .fa-times-circle
                 margin-left: 80px
                 text-decoration: none
@@ -2108,16 +2135,24 @@ footer
                 font-size: 16px
                 font-weight: 400
                 text-transform: uppercase
+                transition: .3s
 
             .SC_product
                 display: flex
                 width: 278px
                 flex-wrap: nowrap
 
+                .SC_product_pic:hover
+                    box-shadow: 0px 0px 5px 0px #635d5d8a 
+
                 .SC_product_pic
                     margin-right: 21px
                     width: 100px
                     height: 115px
+                    transition: .3s
+
+                .SG_product_discription_name:hover
+                    color: $C-pinc
 
                 .SG_product_discription_name
                     text-decoration: none
@@ -2128,6 +2163,7 @@ footer
                     font-size: 13px
                     font-weight: 400
                     text-transform: uppercase
+                    transition: .3s
 
                 .product_discription_color, .SG_product_discription_size
                     color: #575757
@@ -2160,3 +2196,415 @@ footer
             .SC_columns_action
                 margin-left: 45px
 
+.SC_product_box_bottons 
+    display: flex
+    justify-content: space-between
+    margin-top: 44px
+    margin-bottom: 63px
+    
+    .clear:hover, .continue:hover
+        border-color: $C-pinc
+        color: $C-pinc
+        box-shadow: 0px 0px 6px 0px #ef5b70
+
+    .clear, .continue
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 235px;
+        height: 50px;
+        text-decoration: none
+        border: 1px solid #eaeaea
+        background-color: #ffffff
+        color: #4a4a4a
+        font-family: 'Lato'
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        transition: .3s
+
+.SC_form_and_total
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 79px
+
+    .SC_form
+        display: flex
+        justify-content: space-between
+        width: 745px
+        min-width: 300px
+        flex-wrap: wrap
+       
+        .shoping_adress
+                color: #222222
+                font-family: Lato
+                font-size: 16px
+                font-weight: 700
+                text-transform: uppercase
+                margin-bottom: 22px
+
+        .State_and_postcode
+                width: 335px;
+                height: 41px
+                border: 1px solid #eaeaea
+                background-color: #ffffff
+                color: #b1b1b1
+                font-family: Lato
+                font-size: 13px
+                font-weight: 300
+                padding-left: 18px
+                margin-bottom: 20px
+                outline-color: $C-pinc
+
+        .SC_shoping_adress
+            display: flex
+            flex-direction: column
+
+
+            .country
+                width: 356px
+                height: 50px
+                border: 1px solid #eaeaea
+                background-color: #ffffff
+                color: #b1b1b1
+                font-family: Lato
+                font-size: 13px
+                font-weight: 300
+                padding-left: 18px
+                margin-bottom: 20px
+                outline-color: $C-pinc
+
+                option
+                    color: #b1b1b1
+                    font-family: Lato
+                    font-size: 13px
+                    font-weight: 300
+                    padding-left: 18px
+           
+
+            .State_and_postcode::-webkit-input-placeholder 
+                color: #b1b1b1
+                font-family: Lato
+                font-size: 13px
+                font-weight: 300
+                padding-left: 5px
+
+        .SC_shopping_adres_botton:hover
+            border-color: $C-pinc
+            color: $C-pinc
+            box-shadow: 0px 0px 6px 0px #ef5b70
+            
+        .SC_shopping_adres_botton
+            display: flex
+            align-items: center
+            justify-content: center
+            text-decoration: none
+            width: 100px
+            height: 35px
+            border: 1px solid #eaeaea
+            background-color: #ffffff
+            color: #4a4a4a
+            font-family: 'Lato'
+            font-size: 11px
+            font-weight: bold
+            text-transform: uppercase
+            transition: .3s
+            margin-top: 3px
+        
+        .SC_cupon_discount
+            
+
+            h4
+                color: #000000;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 300;
+
+            .apply
+                width: 118px
+            
+    .SC_total
+        width: 272px
+        height: 130px
+        background-color: #f5f3f3
+        padding: 42px 44px
+        display: flex
+        flex-direction: column
+
+        .subtotal
+            color: #4a4a4a
+            font-family: Lato
+            font-size: 11px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: right
+            margin: 0px
+
+            &_price
+                margin-left: 20px
+        
+        .grandtotal
+            color: #222222
+            font-family: Lato
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            text-align: right
+            margin: 0px 0px
+            padding: 14px 0
+            border-bottom: 1px solid  #e2e2e2;
+
+            &_price
+                margin-left: 10px
+
+        .total_bottom:hover        
+            background-color: #f35466
+            box-shadow: 0px 0px 2px 0px #000000
+
+        .total_bottom
+            width: 273px
+            height: 50px
+            background-color: #f16d7f
+            display: flex
+            align-items: center
+            justify-content: center
+            text-decoration: none
+            color: #ffffff
+            font-family: Lato
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            margin-top: 17px
+            transition: 0.5s
+
+
+
+/* ------------------------Cтраница Chekout------------------------- */            
+
+.checoutcontent 
+    margin-bottom: 93px
+
+.chekout_ac
+    width: 1140px 
+    margin-top: 90px
+    
+    .top_label 
+        display: flex
+        flex-direction: row
+        width: 1105px
+        height: 30px 
+        cursor: pointer 
+        // для текста
+        color: #222222
+        font-family: Lato
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 33px 0px 
+        
+
+    .top_label:hover
+        color: #ef5b70
+        
+    .top_input
+        display: none
+
+    .top_input:checked ~ article
+        transition: height 0.6s ease-in-out, box-shadow 0.6s linear
+        height: 460px
+
+    article
+        display: flex   
+        overflow: hidden
+        position: releative
+        z-index: 10
+        height: 0px
+        transition: height 0.6s ease-in-out, box-shadow 0.6s linear
+        border-bottom: 1px solid #ebebeb
+
+    .Chekaut_ac_left_h3
+        color: #222222
+        font-family: 'Lato'
+        font-size: 13px
+        font-weight: 600
+        text-transform: uppercase
+        margin: 0px
+        margin-bottom: 15px
+
+    .Chekaut_ac_p1
+        color: #b3b2b2
+        font-family: 'Lato'
+        font-size: 13px
+        font-weight: 400
+        line-height: 20px
+        margin: 0px
+        margin-bottom: 15px
+
+    .Chekaut_ac_p2
+        margin-top: 18px
+        line-height: 27px
+    
+    
+    .Chekaut_ac_left
+        margin-top: 39px
+        margin-left: 35px
+        margin-right: 350px
+      
+        .Chekout_radio
+            margin-top: 34px
+            margin-bottom: 34px
+            .radio
+                border: none
+                margin-bottom: 20Px
+
+                label
+                    border: none
+                    color: #222222
+                    font-family: 'Lato'
+                    font-size: 12px
+                    font-weight: 400
+                    text-transform: uppercase
+                    margin: 0
+                    padding: 0
+
+                .custom-radio 
+                    position: absolute
+                    z-index: -1
+                    opacity: 0
+                    
+
+                .custom-radio+label 
+                    display: inline-flex
+                    align-items: center
+                    user-select: none
+
+                .custom-radio+label::before 
+                    content: ''
+                    display: inline-block
+                    width: 9px
+                    height: 9px
+                    flex-shrink: 0
+                    flex-grow: 0
+                    border: 2px solid #555555
+                    border-radius: 50%
+                    margin-right: 0.5em
+                    background-repeat: no-repeat
+                    background-position: center center
+                    background-size: 50% 50%
+
+                .custom-radio:not(:disabled):not(:checked), label:hover::before 
+                    border-color: $C-pinc
+                    cursor: pointer
+
+                .custom-radio:not(:disabled):active, label::before 
+                    background-color: #ffffff
+                    border-color: #000000
+
+                .custom-radio:focus:not(:checked), label::before 
+                    border-color: #80bdff
+
+                .custom-radio:checked+label::before 
+                    border-color: #ffffff;
+                    background-color: #000000
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e")
+                    
+                    filter: invert(100%)
+
+                .custom-radio:checked+.label::before
+                    background-color: #000000 
+
+                .custom-radio:disabled+label::before 
+                    background-color: #e9ecef
+  
+        .Chekout_botton
+            color: #4a4a4a
+            font-family: 'Lato'
+            font-size: 14px
+            font-weight: 700
+            text-transform: uppercase
+            width: 180px
+            height: 50px
+            border: 1px solid #eaeaea
+            background-color: #ffffff
+            display: flex
+            align-items: center
+            justify-content: center
+            text-decoration: none
+            margin-top: 35px
+            transition: .3s
+
+        .Chekout_botton:hover
+            border-color: $C-pinc
+            color: $C-pinc
+            box-shadow: 0px 0px 6px 0px #ef5b70
+
+    .Chekout_ac_right
+        margin-top: 39px
+        .avtorisation
+            margin-top: 27px
+
+        .Checout_input_h
+            color: #222222
+            font-family: 'Lato'
+            font-size: 12px
+            font-weight: 600
+            line-height: 20px
+            text-transform: uppercase
+            margin: 0px
+            margin-bottom: 16px
+
+            .star
+                color: #ff0d0d
+                font-family: Lato
+                font-size: 17px
+                font-weight: 600
+                line-height: 20px
+
+        .validation
+            color: #ff0d0d
+            font-family: Lato
+            font-size: 13px
+            font-weight: 600
+            line-height: 20px
+            margin: 0px
+            margin-top: 22px
+             
+        .avtorisation
+            .Chekout_input 
+                display: block
+                width: 390px
+                height: 41px
+                border: 1px solid #eaeaea
+                background-color: #ffffff
+                margin: 0px
+                margin-bottom: 16px
+
+            .Chekout_submit
+                width: 114px
+                height: 46px
+                cursor: pointer
+                background-color: $C-pinc
+                border: none
+                display: block
+                width: 180px
+                height: 50px
+                border: 1px solid #eaeaea
+                background-color: #ffffff
+                color: #4a4a4a
+                font-family: 'Lato'
+                font-size: 14px
+                font-weight: 700
+                text-transform: uppercase
+                margin-top: 30px
+                margin-bottom: 78px
+                transition: .3s
+
+            .Chekout_submit:hover
+                border-color: $C-pinc
+                color: $C-pinc
+                box-shadow: 0px 0px 6px 0px #ef5b70
+
+
+        
+       

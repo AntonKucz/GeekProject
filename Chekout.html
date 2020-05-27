@@ -7,12 +7,12 @@
     <title>The Brand</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/58ef679fef.js" crossorigin="anonymous"></script>
-    
 
 </head>
 
 <body>
     <header class="header center">
+
         <div class="logo">
             <a class="Logo_link" href="Index.html"><img src="img/logo.png" height="51px" width="59px" alt="Логотип"></a>
             <a class="Brand_link" href="Index.html">
@@ -32,7 +32,8 @@
                             <li><a href="" class="Browse_droplist_elements_list_link">Jackets/Coats</a></li>
                             <li><a href="" class="Browse_droplist_elements_list_link">Blazers</a></li>
                             <li><a href="" class="Browse_droplist_elements_list_link">Denim</a></li>
-                            <li><a href="Single page.html" class="Browse_droplist_elements_list_link">Leggings/Pants</a></li>
+                            <li><a href="Single page.html" class="Browse_droplist_elements_list_link">Leggings/Pants</a>
+                            </li>
                             <li><a href="" class="Browse_droplist_elements_list_link">Skirts/Shorts</a></li>
                             <li><a href="" class="Browse_droplist_elements_list_link">Accessories </a></li>
                         </ul>
@@ -53,7 +54,7 @@
             <li class="searchlist"><input class="searchlist_input" type="text" placeholder="Search for Item..."></li>
             <li class="searchlist"><a class="loupe" href=""><img src="img/lupa.png" alt=""></a></li>
         </ul>
-            
+
 
         <div class="basket">
             <ul class="basket_ul">
@@ -167,10 +168,10 @@
                     <div class="drop_flex">
                         <h3 class="drop_h3">Women</h3>
                         <ul class="drop_ul">
-                            <li><a href="" class="drop_a">Dresses </a></li>
-                            <li><a href="" class="drop_a">Tops </a></li>
-                            <li><a href="" class="drop_a">Denim </a></li>
-                            <li><a href="" class="drop_a">Leggings/Pants </a></li>
+                            <li><a href="Single page.html" class="drop_a">Dresses </a></li>
+                            <li><a href="Single page.html" class="drop_a">Tops </a></li>
+                            <li><a href="Single page.html" class="drop_a">Denim </a></li>
+                            <li><a href="Single page.html" class="drop_a">Leggings/Pants </a></li>
                         </ul>
                         <h3 class="drop_h3">Kids</h3>
                         <ul class="drop_ul">
@@ -194,7 +195,7 @@
                     </div>
                 </div>
             </li>
-            <li class="menu_elements"><a class="menu_active_link" href="#">Women</a></li>
+            <li class="menu_elements"><a href="#">Women</a></li>
             <li class="menu_elements"><a href="#">Kids</a></li>
             <li class="menu_elements"><a href="#">Accoseriese</a></li>
             <li class="menu_elements"><a href="#">Featured</a></li>
@@ -206,10 +207,8 @@
         <nav class="menu_product_nav">
             <ul class="menu_product_nav_list">
                 <li class="menu_product_nav_list_li"><a href="Index.html">Home /</a></li>
-                <li class="menu_product_nav_list_li"><a href="Single page.html">Woman /</a></li>
-                <li class="menu_product_nav_list_li"><a href="Single page.html">Leggins/Pants /</a></li>
-                <li class="menu_product_nav_list_li menu_product_active"><a href="Single page.html">MOSCHINO CHEAP AND CHIC /</a></li>
-
+                <li class="menu_product_nav_list_li"><a href="Product.html">Men /</a></li>
+                <li class="menu_product_nav_list_li menu_product_active"><a href="Product.html">New Arrivals</a></li>
 
 
             </ul>
@@ -217,212 +216,280 @@
 
         </nav>
     </div>
+    <div class="checoutcontent center">
+        <section class="chekout_ac">
+            <div class="contentPage_ac_element">
+                <input class="top_input" id="ac-1" name="accordion-1" type="checkbox" checked />
+                <label class="top_label" for="ac-1">01. Shipping Adress</label>
+                <article>
+                    <div class="Chekaut_ac_left">
+                        <h3 class="Chekaut_ac_left_h3">Check as a guest or register</h3>
+                        <p class="Chekaut_ac_p1">Register with us for future convenience</p>
+                        <div class="Chekout_radio">
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
+                                <label for="color-1">checkout as guest</label>
+                            </div>
 
-    <div class="Single_page_Slider">
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-2" name="color" value="red">
+                                <label for="color-2">register</label>
+                            </div>
+                        </div>
+                        <h3 class="Chekaut_ac_left_h3">register and save time!</h3>
+                        <p class="Chekaut_ac_p1">
+                            Register with us for future convenience
+                            <p class="Chekaut_ac_p1 Chekaut_ac_p2">
+                                >>Fast and easy checkout <br>
+                                >>Easy access to your order history and status</p>
+                        </p>
+                        <a href="" class="Chekout_botton">Continue</a>
 
-        <div id="slider-wrap center">
-            <div class="" id="slider">
-                <div class="slide"><img src="img/Single/foto1.png">
-                </div>
+                    </div>
+                    <div class="Chekout_ac_right">
+                        <h3 class="Chekaut_ac_left_h3">Already registed?</h3>
+                        <p class="Chekaut_ac_p1">Please log in below</p>
+                        <form class="avtorisation" action="">
+                            <h4 class="Checout_input_h">EMAIL ADDRESS <span class="star">*</span></h4>
+                            <input class="Chekout_input email" type="email" required
+                                pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'|~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+                            <h4 class="Checout_input_h">PASSWORD <span class="star">*</span></h4>
+                            <input class="Chekout_input pass" type="password" required
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$>">
+                            <h5 class="validation">*&nbsp;Required Fileds</h5>
+                            <input class="Chekout_submit" type="submit" value="Log in">
+                        </form>
+
+                    </div>
+                </article>
             </div>
-        </div>
-        <div class="slider_preview_next">
-            <a href="">
-                <div class="preview"><img src="img/Single/chevron-left-solid.svg" width="8px" height="14px" alt="">
-                </div>
-            </a>
-            <a href="">
-                <div class="next"><img src="img/Single/chevron-right-solid.svg" width="8px" height="14px" alt=""></div>
-            </a>
+            <div class="contentPage_ac_element">
+                <input class="top_input" id="ac-2" name="accordion-1" type="checkbox" />
+                <label class="top_label" for="ac-2">02. BILLING INFORMATION</label>
+                <article>
+                    <div class="Chekaut_ac_left">
+                        <h3 class="Chekaut_ac_left_h3">Check as a guest or register</h3>
+                        <p class="Chekaut_ac_p1">Register with us for future convenience</p>
+                        <div class="Chekout_radio">
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
+                                <label for="color-1">checkout as guest</label>
+                            </div>
 
-        </div>
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-2" name="color" value="red">
+                                <label for="color-2">register</label>
+                            </div>
+                        </div>
+                        <h3 class="Chekaut_ac_left_h3">register and save time!</h3>
+                        <p class="Chekaut_ac_p1">
+                            Register with us for future convenience
+                            <p class="Chekaut_ac_p1 Chekaut_ac_p2">
+                                >>Fast and easy checkout <br>
+                                >>Easy access to your order history and status</p>
+                        </p>
+                        <a href="" class="Chekout_botton">Continue</a>
+
+                    </div>
+                    <div class="Chekout_ac_right">
+                        <h3 class="Chekaut_ac_left_h3">Already registed?</h3>
+                        <p class="Chekaut_ac_p1">Please log in below</p>
+                        <form class="avtorisation" action="">
+                            <h4 class="Checout_input_h">EMAIL ADDRESS <span class="star">*</span></h4>
+                            <input class="Chekout_input email" type="email"
+                                pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'|~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                            <h4 class="Checout_input_h">PASSWORD <span class="star">*</span></h4>
+                            <input class="Chekout_input pass" type="password"
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$>" required>
+                            <h5 class="validation">*&nbsp;Required Fileds</h5>
+                            <input class="Chekout_submit" type="submit" value="Log in">
+                        </form>
+
+                    </div>
+                </article>
+            </div>
+            <div class="contentPage_ac_element">
+                <input class="top_input" id="ac-3" name="accordion-1" type="checkbox" />
+                <label class="top_label" for="ac-3">03. SHIPPING INFORMATION</label>
+                <article>
+                    <div class="Chekaut_ac_left">
+                        <h3 class="Chekaut_ac_left_h3">Check as a guest or register</h3>
+                        <p class="Chekaut_ac_p1">Register with us for future convenience</p>
+                        <div class="Chekout_radio">
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
+                                <label for="color-1">checkout as guest</label>
+                            </div>
+
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-2" name="color" value="red">
+                                <label for="color-2">register</label>
+                            </div>
+                        </div>
+                        <h3 class="Chekaut_ac_left_h3">register and save time!</h3>
+                        <p class="Chekaut_ac_p1">
+                            Register with us for future convenience
+                            <p class="Chekaut_ac_p1 Chekaut_ac_p2">
+                                >>Fast and easy checkout <br>
+                                >>Easy access to your order history and status</p>
+                        </p>
+                        <a href="" class="Chekout_botton">Continue</a>
+
+                    </div>
+                    <div class="Chekout_ac_right">
+                        <h3 class="Chekaut_ac_left_h3">Already registed?</h3>
+                        <p class="Chekaut_ac_p1">Please log in below</p>
+                        <form class="avtorisation" action="">
+                            <h4 class="Checout_input_h">EMAIL ADDRESS <span class="star">*</span></h4>
+                            <input class="Chekout_input email" type="email"
+                                pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'|~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                            <h4 class="Checout_input_h">PASSWORD <span class="star">*</span></h4>
+                            <input class="Chekout_input pass" type="password"
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$>" required>
+                            <h5 class="validation">*&nbsp;Required Fileds</h5>
+                            <input class="Chekout_submit" type="submit" value="Log in">
+                        </form>
+
+                    </div>
+                </article>
+            </div>
+            <div class="contentPage_ac_element">
+                <input class="top_input" id="ac-4" name="accordion-1" type="checkbox" />
+                <label class="top_label" for="ac-4">04. SHIPPING METHOD</label>
+                <article>
+                    <div class="Chekaut_ac_left">
+                        <h3 class="Chekaut_ac_left_h3">Check as a guest or register</h3>
+                        <p class="Chekaut_ac_p1">Register with us for future convenience</p>
+                        <div class="Chekout_radio">
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
+                                <label for="color-1">checkout as guest</label>
+                            </div>
+
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-2" name="color" value="red">
+                                <label for="color-2">register</label>
+                            </div>
+                        </div>
+                        <h3 class="Chekaut_ac_left_h3">register and save time!</h3>
+                        <p class="Chekaut_ac_p1">
+                            Register with us for future convenience
+                            <p class="Chekaut_ac_p1 Chekaut_ac_p2">
+                                >>Fast and easy checkout <br>
+                                >>Easy access to your order history and status</p>
+                        </p>
+                        <a href="" class="Chekout_botton">Continue</a>
+
+                    </div>
+                    <div class="Chekout_ac_right">
+                        <h3 class="Chekaut_ac_left_h3">Already registed?</h3>
+                        <p class="Chekaut_ac_p1">Please log in below</p>
+                        <form class="avtorisation" action="">
+                            <h4 class="Checout_input_h">EMAIL ADDRESS <span class="star">*</span></h4>
+                            <input class="Chekout_input email" type="email"
+                                pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'|~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                            <h4 class="Checout_input_h">PASSWORD <span class="star">*</span></h4>
+                            <input class="Chekout_input pass" type="password"
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$>" required>
+                            <h5 class="validation">*&nbsp;Required Fileds</h5>
+                            <input class="Chekout_submit" type="submit" value="Log in">
+                        </form>
+
+                    </div>
+                </article>
+            </div>
+            <div class="contentPage_ac_element">
+                <input class="top_input" id="ac-5" name="accordion-1" type="checkbox" />
+                <label class="top_label" for="ac-5">05. PAYMENT METHOD</label>
+                <article>
+                    <div class="Chekaut_ac_left">
+                        <h3 class="Chekaut_ac_left_h3">Check as a guest or register</h3>
+                        <p class="Chekaut_ac_p1">Register with us for future convenience</p>
+                        <div class="Chekout_radio">
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
+                                <label for="color-1">checkout as guest</label>
+                            </div>
+
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-2" name="color" value="red">
+                                <label for="color-2">register</label>
+                            </div>
+                        </div>
+                        <h3 class="Chekaut_ac_left_h3">register and save time!</h3>
+                        <p class="Chekaut_ac_p1">
+                            Register with us for future convenience
+                            <p class="Chekaut_ac_p1 Chekaut_ac_p2">
+                                >>Fast and easy checkout <br>
+                                >>Easy access to your order history and status</p>
+                        </p>
+                        <a href="" class="Chekout_botton">Continue</a>
+
+                    </div>
+                    <div class="Chekout_ac_right">
+                        <h3 class="Chekaut_ac_left_h3">Already registed?</h3>
+                        <p class="Chekaut_ac_p1">Please log in below</p>
+                        <form class="avtorisation" action="">
+                            <h4 class="Checout_input_h">EMAIL ADDRESS <span class="star">*</span></h4>
+                            <input class="Chekout_input email" type="email"
+                                pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'|~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                            <h4 class="Checout_input_h">PASSWORD <span class="star">*</span></h4>
+                            <input class="Chekout_input pass" type="password"
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$>" required>
+                            <h5 class="validation">*&nbsp;Required Fileds</h5>
+                            <input class="Chekout_submit" type="submit" value="Log in">
+                        </form>
+
+                    </div>
+                </article>
+            </div>
+            <div class="contentPage_ac_element">
+                <input class="top_input" id="ac-4" name="accordion-1" type="checkbox" />
+                <label class="top_label" for="ac-4">06. ORDER REVIEW</label>
+                <article>
+                    <div class="Chekaut_ac_left">
+                        <h3 class="Chekaut_ac_left_h3">Check as a guest or register</h3>
+                        <p class="Chekaut_ac_p1">Register with us for future convenience</p>
+                        <div class="Chekout_radio">
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-1" name="color" value="indigo">
+                                <label for="color-1">checkout as guest</label>
+                            </div>
+
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="color-2" name="color" value="red">
+                                <label for="color-2">register</label>
+                            </div>
+                        </div>
+                        <h3 class="Chekaut_ac_left_h3">register and save time!</h3>
+                        <p class="Chekaut_ac_p1">
+                            Register with us for future convenience
+                            <p class="Chekaut_ac_p1 Chekaut_ac_p2">
+                                >>Fast and easy checkout <br>
+                                >>Easy access to your order history and status</p>
+                        </p>
+                        <a href="" class="Chekout_botton">Continue</a>
+
+                    </div>
+                    <div class="Chekout_ac_right">
+                        <h3 class="Chekaut_ac_left_h3">Already registed?</h3>
+                        <p class="Chekaut_ac_p1">Please log in below</p>
+                        <form class="avtorisation" action="">
+                            <h4 class="Checout_input_h">EMAIL ADDRESS <span class="star">*</span></h4>
+                            <input class="Chekout_input email" type="email"
+                                pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'|~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                            <h4 class="Checout_input_h">PASSWORD <span class="star">*</span></h4>
+                            <input class="Chekout_input pass" type="password"
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$>" required>
+                            <h5 class="validation">*&nbsp;Required Fileds</h5>
+                            <input class="Chekout_submit" type="submit" value="Log in">
+                        </form>
+
+                    </div>
+                </article>
+            </div>
+        </section>
     </div>
-
-    <div class="Single_page_content">
-        <div class="SP_Product_discription">
-            <div class="SP_Product_discription_top">
-                <h2>WOMEN COLLECTION</h2>
-                <h3>Moschino Cheap And Chic</h3>
-                <div class="rating">
-                    <div class="rating" id="rating">
-                        <div class="comment" id="message"></div>
-                        <div class="rating-area">
-                            <input type="radio" id="star-5" name="rating.cart3" value="5" checked>
-                            <label for="star-5" title="Оценка «5»"></label>
-                            <input type="radio" id="star-4" name="rating.cart3" value="4">
-                            <label for="star-4" title="Оценка «4»"></label>
-                            <input type="radio" id="star-3" name="rating.cart3" value="3">
-                            <label for="star-3" title="Оценка «3»"></label>
-                            <input type="radio" id="star-2" name="rating.cart3" value="2">
-                            <label for="star-2" title="Оценка «2»"></label>
-                            <input type="radio" id="star-1" name="rating.cart3" value="1">
-                            <label for="star-1" title="Оценка «1»"></label>
-                        </div>
-                    </div>
-                </div>
-                <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively
-                    syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
-                    core competencies rather than exceptional portals. </p>
-                <div class="character">
-                    <div class="character_left">MATERIAL: <span>COTTON</span></div> 
-                    <div class="character_right">DESIGNER: <span>BINBURHAN</span></div>
-                </div>
-                <div class="price">$561</div>
-            </div>
-            <div class="SP_Product_discription_botton">
-                <div class="SP_Product_discription_botton_top">
-                    <form action="">
-                        <div class="CHOOSE_color">CHOOSE COLOR
-                            <select class="color" name="" id="">
-                                <option class="red" value="">🟥&#160;Red</option>
-                                <option class="green" value="">🟩&#160;Green</option>
-                                <option class="gray" value="">⬜&#160;Gray</option>
-                                <option class="blue" value="">🟦&#160;Blue</option>               
-                            </select>
-                        </div>
-                        <div class="CHOOSE_size">CHOOSE SIZE
-                            <select class="size" name="" id="">
-                                <option value="">XXL</option>
-                                <option value="">XS</option>
-                                <option value="">S</option>
-                                <option value="">M</option>                         
-                            </select>
-                        </div>
-                        <div class="QUANTITY">QUANTITY
-                            <input type="text" placeholder="2">
-                        </div>
-                        
-                    </form>
-
-
-                </div>
-                <div class="SP_Product_discription_botton_botton">
-                <a href=""><i class="fas fa-shopping-cart"></i>&#160;&#160;Add to Cart</a>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <h2 class="you_may center">you may like also</h2>
-    
-    <section class="Product_Box center Single_page_product">
-        <article class="Product">
-            <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/Single/Rectangle_5_copy.png" alt=""></a>
-            <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
-            <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
-            <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
-            <a class="Product_Discription" href="№">
-                <div class="productname">BLAZE LEGGINGS</div>
-                <div class="price">$52.00
-                    
-                    <div class="rating" id="rating">
-                        <div class="comment" id="message"></div>
-                        <div class="rating-area">
-                            <input type="radio" id="star-5" name="rating.1" value="5">
-                            <label for="star-5" title="Оценка «5»"></label>
-                            <input type="radio" id="star-4" name="rating.1" value="4">
-                            <label for="star-4" title="Оценка «4»"></label>
-                            <input type="radio" id="star-3" name="rating.1" value="3" checked>
-                            <label for="star-3" title="Оценка «3»"></label>
-                            <input type="radio" id="star-2" name="rating.1" value="2">
-                            <label for="star-2" title="Оценка «2»"></label>
-                            <input type="radio" id="star-1" name="rating.1" value="1">
-                            <label for="star-1" title="Оценка «1»"></label>
-                        </div>
-                    </div>
-
-
-                </div>
-            </a>
-        </article>
-        <article class="Product">
-            <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/Single/sp2.png" alt=""></a>
-            <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
-            <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
-            <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
-            <a class="Product_Discription" href="№">
-                <div class="productname">ALEXA SWEATER</div>
-                <div class="price">$52.00
-                    
-                    <div class="rating" id="rating">
-                        <div class="comment" id="message"></div>
-                        <div class="rating-area">
-                            <input type="radio" id="star-5" name="rating.2" value="5">
-                            <label for="star-5" title="Оценка «5»"></label>
-                            <input type="radio" id="star-4" name="rating.2" value="4" checked>
-                            <label for="star-4" title="Оценка «4»"></label>
-                            <input type="radio" id="star-3" name="rating.2" value="3">
-                            <label for="star-3" title="Оценка «3»"></label>
-                            <input type="radio" id="star-2" name="rating.2" value="2">
-                            <label for="star-2" title="Оценка «2»"></label>
-                            <input type="radio" id="star-1" name="rating.2" value="1">
-                            <label for="star-1" title="Оценка «1»"></label>
-                        </div>
-                    </div>
-
-
-                </div>
-            </a>
-        </article>
-        <article class="Product">
-            <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/Single/sp3.png" alt=""></a>
-            <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
-            <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
-            <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
-            <a class="Product_Discription" href="№">
-                <div class="productname">AGNES TOP</div>
-                <div class="price">$52.00
-                    
-                    <div class="rating" id="rating">
-                        <div class="comment" id="message"></div>
-                        <div class="rating-area">
-                            <input type="radio" id="star-5" name="rating.3" value="5">
-                            <label for="star-5" title="Оценка «5»"></label>
-                            <input type="radio" id="star-4" name="rating.3" value="4">
-                            <label for="star-4" title="Оценка «4»"></label>
-                            <input type="radio" id="star-3" name="rating.3" value="3" checked>
-                            <label for="star-3" title="Оценка «3»"></label>
-                            <input type="radio" id="star-2" name="rating.3" value="2">
-                            <label for="star-2" title="Оценка «2»"></label>
-                            <input type="radio" id="star-1" name="rating.3" value="1">
-                            <label for="star-1" title="Оценка «1»"></label>
-                        </div>
-                    </div>
-
-
-                </div>
-            </a>
-        </article>
-        <article class="Product">
-            <a class="Product_PicLinc" href="#"><img class="Product_Pic" src="img/Single/sp4.png" alt=""></a>
-            <a class="addTo" href="#"><img src="img/addTo.png" alt="">Add to Cart</a>
-            <a class="addTo_like" href="#"><img src="img/product/retweet-solid.svg" alt=""></a>
-            <a class="addTo_like_2" href="#"><img src="img/product/heart-regular.svg" alt=""></a>
-            <a class="Product_Discription" href="№">
-                <div class="productname">SYLVA SWEATER</div>
-                <div class="price">$52.00
-                    
-                    <div class="rating" id="rating">
-                        <div class="comment" id="message"></div>
-                        <div class="rating-area">
-                            <input type="radio" id="star-5" name="rating.4" value="5">
-                            <label for="star-5" title="Оценка «5»"></label>
-                            <input type="radio" id="star-4" name="rating.4" value="4" checked>
-                            <label for="star-4" title="Оценка «4»"></label>
-                            <input type="radio" id="star-3" name="rating.4" value="3">
-                            <label for="star-3" title="Оценка «3»"></label>
-                            <input type="radio" id="star-2" name="rating.4" value="2">
-                            <label for="star-2" title="Оценка «2»"></label>
-                            <input type="radio" id="star-1" name="rating.4" value="1">
-                            <label for="star-1" title="Оценка «1»"></label>
-                        </div>
-                    </div>
-
-
-                </div>
-            </a>
-        </article>
-    </section>
 
     <div class="Subscribe_Block">
         <div class="Subscribe_left">
@@ -450,6 +517,8 @@
             </div>
             </form>
         </div>
+
+
         <div class="Subscribe_right">
             <p>Subscribe</p>
             <span FOR_OUR>FOR OUR NEWLETTER AND PROMOTION</span>
@@ -475,7 +544,7 @@
                         <p class="Brand_text">BRAN<span class="RedLetter">D</span></p>
                     </a>
                 </div>
-                <div class="footer_text_text">                 
+                <div class="footer_text_text">
                     <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally
                         syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
                         expanded array of processes and cross-unit partnerships. <br> <br>
@@ -488,10 +557,10 @@
             </div>
             <div class="footer_menu">
                 <ul class="footer_menu_ul">
-                    <li class="footer_li_1"><a href="#">COMPANY</a>
+                    <li class="footer_li_1"><a href="Index.html">COMPANY</a>
                         <ul>
                             <li class="footer_li_2"><a href="Index.html">Home</a></li>
-                            <li class="footer_li_2"><a href="Product.html">Shop</a></li>
+                            <li class="footer_li_2"><a href="#">Shop</a></li>
                             <li class="footer_li_2"><a href="#">About</a></li>
                             <li class="footer_li_2"><a href="#">How It Works</a></li>
                             <li class="footer_li_2"><a href="#">Contact</a></li>
