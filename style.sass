@@ -210,12 +210,17 @@ header
         transition: 0.5s
 
     .basket:hover .GoToCart 
-        display: flex
+        visibility: visible
+        opacity: 1
+        transition: opacity 3s ease-in
+        transition-duration: .3s
 
 
 
     .GoToCart 
-        display: none
+        visibility: hidden
+        opacity: 0
+        display: flex
         flex-direction: column
         height: 440px
         width: 261px
@@ -237,13 +242,17 @@ header
         width: 230px
         position: relative
 
+        .GoToCart_elements_img
+            transition: .3s
+            
+
+        .GoToCart_elements_img:hover
+            box-shadow: 0px 1px 2px 0px #222222
 
 
     .GoToCart_elements__cont 
-
         margin-top: 0px
         padding-left: 14px
-
 
 
     .GoToCard_elements_name 
@@ -254,7 +263,10 @@ header
         color: #222222
         text-transform: uppercase
         text-decoration: none
+        transition: .3s
 
+    .GoToCard_elements_name:hover
+        color: $C-pinc
 
 
     .GoToCard_elements_price 
@@ -446,40 +458,59 @@ header
                 padding-top: 20px
 
     .menu_list:hover .drop 
-        display: flex
+        visibility: visible
+        opacity: 1
+        transition: opacity 3s ease-in
+        transition-duration: .3s
+        
+        
 
     .drop 
         background-color: #fff
         border-radius: 5px
         padding: 12px 20px
         position: absolute
-        display: none
+        display: flex      
+        opacity: 0
+        visibility: hidden
         z-index: 1
 
         img 
             padding-top: 18px
 
-        .image_box
-            width: 255px
-            height: 118px
-            color: #ffffff
-            font-family: "Lato - Black"
-            font-size: 22px
-            font-weight: 400
-            line-height: 28px;
-            text-transform: uppercase
-            letter-spacing: 0.55px
-            background-image: url(img/collman.png)
-            text-align: end
-            display: flex
-            flex-direction: column-reverse
-            margin-left: -35px
+        
                 
-        .image_link:hover
-            filter: brightness(105%)
+        .image_link:hover 
+            filter: brightness(107%)
+            color: $C-pinc
 
-        .image_link:hover
-            transition: .9s
+        .image_link:hover >.image_box 
+            color: $C-pinc
+
+        .image_link
+            transition: .3s
+            filter: brightness(100%)
+
+            .image_box
+                width: 255px
+                height: 118px
+                color: #ffffff
+                font-family: "Lato - Black"
+                font-size: 22px
+                font-weight: 400
+                line-height: 28px
+                text-transform: uppercase
+                letter-spacing: 0.55px
+                background-image: url(img/collman.png)
+                text-align: end
+                display: flex
+                flex-direction: column-reverse
+                margin-left: -35px
+                transition: .3s
+                
+                .Super_sale
+                    padding-bottom: 12px
+                    padding-right: 10px
 
         .drop_flex
             h3 
@@ -2360,7 +2391,7 @@ footer
 
         .total_bottom:hover        
             background-color: #f35466
-            box-shadow: 0px 0px 2px 0px #000000
+            box-shadow: 0px 1px 2px 0px #000000
 
         .total_bottom
             width: 273px
@@ -2573,12 +2604,36 @@ footer
         .avtorisation
             .Chekout_input 
                 display: block
-                width: 390px
+                width: 375px
                 height: 41px
                 border: 1px solid #eaeaea
                 background-color: #ffffff
                 margin: 0px
                 margin-bottom: 16px
+                outline-color: $C-pinc
+                padding-left: 10px
+
+            .forgot_pass
+                margin: 0
+                display: flex
+                flex-direction: row
+                align-items: center
+                margin-top: 30px
+                margin-bottom: 78px
+               
+                .forgot_pass_link              
+                    color: #222222
+                    font-family: 'Lato'
+                    font-size: 14px
+                    font-weight: bold
+                    line-height: 20px
+                    text-decoration: none
+                    padding-left: 32px
+                    transition: .3s
+                    
+
+                .forgot_pass_link:hover
+                    color: $C-pinc
 
             .Chekout_submit
                 width: 114px
@@ -2596,9 +2651,8 @@ footer
                 font-size: 14px
                 font-weight: 700
                 text-transform: uppercase
-                margin-top: 30px
-                margin-bottom: 78px
                 transition: .3s
+              
 
             .Chekout_submit:hover
                 border-color: $C-pinc
