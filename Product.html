@@ -7,13 +7,14 @@
     <title>The Brand</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100300400700900&display=swap" rel="stylesheet">
-    <script src="https://use.fontawesome.com/0e08f026fe.js"></script>
+    <script src="https://kit.fontawesome.com/58ef679fef.js" crossorigin="anonymous"></script>
+    
+
 </head>
 
 <body>
-    <header class="center">
-    
+    <header class="header center">
+
         <div class="logo">
             <a class="Logo_link" href="Index.html"><img src="img/logo.png" height="51px" width="59px" alt="Логотип"></a>
             <a class="Brand_link" href="Index.html">
@@ -21,40 +22,46 @@
 
             </a>
         </div>
-        <div class="search">
-            <ul class="Browse">
-                <li>
-                    <a class="Browse_link" href="#" id="">Browse
-                        <ul class="Browse_list" id="">
-                            <li class="Browse_list_h"><a href="">Woman</a></li>
-                            <li class="Browse_list_a"><a href="">Dresses</a></li>
-                            <li class="Browse_list_a"><a href="">Tops </a></li>
-                            <li class="Browse_list_a"><a href="">Sweaters/Knits</a></li>
-                            <li class="Browse_list_a"><a href="">Jackets/Coats</a></li>
-                            <li class="Browse_list_a"><a href="">Blazers</a></li>
-                            <li class="Browse_list_a"><a href="">Denim</a></li>
-                            <li class="Browse_list_a"><a href="">Leggings/Pants</a></li>
-                            <li class="Browse_list_a"><a href="">Skirts/Shorts</a></li>
-                            <li class="Browse_list_a"><a href="">Accessories</a></li>
-                            <li class="Browse_list_h"><a href="">Man</a></li>
-                            <li class="Browse_list_a"><a href="">Tees/Tank tops </a></li>
-                            <li class="Browse_list_a"><a href="">Shirts/Polos</a></li>
-                            <li class="Browse_list_a"><a href="">Sweaters</a></li>
-                            <li class="Browse_list_a"><a href="">Sweatshirts/Hoodies</a></li>
-                            <li class="Browse_list_a"><a href="">Blazers </a></li>
-                            <li class="Browse_list_a"><a href="">Jackets/vests </a></li>
+        <ul class="search">
+            <li class="searchlist">
+                <a class="Browse" href="">Browse</a>
+                <ul class="Browse_droplist">
+                    <li class="Browse_droplist_elements">
+                        <a class="Browse_droplist_elements_links" href="">Women</a>
+                        <ul class="Browse_droplist_elements_list">
+                            <li><a href="" class="Browse_droplist_elements_list_link">Dresses</a></li>
+                            <li><a href="" class="Browse_droplist_elements_list_link">Tops</a></li>
+                            <li><a href="" class="Browse_droplist_elements_list_link">Sweaters/Knits</a></li>
+                            <li><a href="" class="Browse_droplist_elements_list_link">Jackets/Coats</a></li>
+                            <li><a href="" class="Browse_droplist_elements_list_link">Blazers</a></li>
+                            <li><a href="" class="Browse_droplist_elements_list_link">Denim</a></li>
+                            <li><a href="Single page.html" class="Browse_droplist_elements_list_link">Leggings/Pants</a></li>
+                            <li><a href="" class="Browse_droplist_elements_list_link">Skirts/Shorts</a></li>
+                            <li><a href="" class="Browse_droplist_elements_list_link">Accessories </a></li>
                         </ul>
+                        <a class="Browse_droplist_elements_links" href="Product.html">Men</a>
+                        <ul class="Browse_droplist_elements_list">
+                            <li><a href="" class="Browse_droplist_elements_list_link">Tees/Tank tops</a></li>
+                            <li><a href="" class="Browse_droplist_elements_list_link">Shirts/Polos</a></li>
+                            <li><a href="" class="Browse_droplist_elements_list_link">Sweaters</a></li>
+                            <li><a href="" class="Browse_droplist_elements_list_link">Sweatshirts/Hoodies</a></li>
+                            <li><a href="" class="Browse_droplist_elements_list_link">Blazers</a></li>
+                            <li><a href="" class="Browse_droplist_elements_list_link">Jackets/vests</a></li>
+                        </ul>
+                    </li>
+                    <li class="Browse_droplist_elements"></li>
+                    <li class="Browse_droplist_elements"></li>
+                </ul>
+            </li>
+            <li class="searchlist"><input class="searchlist_input" type="text" placeholder="Search for Item..."></li>
+            <li class="searchlist"><a class="loupe" href=""><img src="img/lupa.png" alt=""></a></li>
+        </ul>
+            
 
-                    </a>
-                </li>
-            </ul>
-            <input type="text" placeholder="Search for Item...">
-            <a class="lupa" href=""><img src="img/lupa.png" alt=""></a>
-        </div>
         <div class="basket">
             <ul class="basket_ul">
                 <li class="basket_ul_li">
-                    <a href="#"><img class="basket_img" src="img/basket.png" alt=""></a>
+                    <a href="Shoping cart.html"><img class="basket_img" src="img/basket.png" alt=""></a>
                     <ul class="basket_il_drop">
                         <li>
                             <div class="GoToCart">
@@ -75,7 +82,8 @@
                                                     <label for="star-5" title="Оценка «5»"></label>
                                                     <input type="radio" id="star-4" name="rating.cart1" value="4">
                                                     <label for="star-4" title="Оценка «4»"></label>
-                                                    <input type="radio" id="star-3" name="rating.cart1" value="3" checked>
+                                                    <input type="radio" id="star-3" name="rating.cart1" value="3"
+                                                        checked>
                                                     <label for="star-3" title="Оценка «3»"></label>
                                                     <input type="radio" id="star-2" name="rating.cart1" value="2">
                                                     <label for="star-2" title="Оценка «2»"></label>
@@ -103,7 +111,8 @@
 
                                                     <input type="radio" id="star-5" name="rating.cart2" value="5">
                                                     <label for="star-5" title="Оценка «5»"></label>
-                                                    <input type="radio" id="star-4" name="rating.cart2" value="4" checked>
+                                                    <input type="radio" id="star-4" name="rating.cart2" value="4"
+                                                        checked>
                                                     <label for="star-4" title="Оценка «4»"></label>
                                                     <input type="radio" id="star-3" name="rating.cart2" value="3">
                                                     <label for="star-3" title="Оценка «3»"></label>
@@ -140,7 +149,7 @@
         </div>
 
         <div class="button">
-            <a href="#">My Account</a>
+            <a href="Chekout.html">My Account</a>
         </div>
 
     </header>
@@ -190,7 +199,10 @@
                             <li><a href="" class="drop_a">Shoes Beauty </a></li>
                         </ul>
 
-                        <a class="image_link" href=""><div class="image_box">Super<br>Sale!</div></a>
+                        <a class="image_link" href="">
+                            <div class="image_box"><div class="Super_sale">Super<br>Sale !</div></div>
+                        </a>
+
                                   
 
                     </div>
@@ -208,9 +220,10 @@
         <nav class="menu_product_nav">
             <ul class="menu_product_nav_list">
 
-                <li class="menu_product_nav_list_li"><a href="">Home /</a></li>
-                <li class="menu_product_nav_list_li"><a href="">Men /</a></li>
-                <li class="menu_product_nav_list_li menu_product_active"><a href="">New Arrivals</a></li>
+                <li class="menu_product_nav_list_li"><a href="Index.html">Home /</a></li>
+                <li class="menu_product_nav_list_li"><a href="Product.html">Men /</a></li>
+                <li class="menu_product_nav_list_li menu_product_active"><a href="Product.html">New Arrivals</a></li>
+
 
 
 
@@ -352,7 +365,7 @@
                 <div class="filters_top_prise">
                     <div class="slidecontainer">                        
                         <p>Price</p>
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onchange="document.getElementById('rangeValue').innerHTML = this.value;>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                         <output for="myRange" name="level"></output>
                  
                   </div>
@@ -651,15 +664,14 @@
         <div class="pagination_and_botton">
         <div class="pagination">
             <ul id="pagination-flickr">
-                <li class="previous-off" class=""><a href="?page=2"><</a></li>
+                <li class="previous-off" class=""><a href="?page=2"><i class="fas fa-angle-left"></i></a></li>
                 <li class="active">1</li>
-                <li><a href="?page=2">2</a></li>
-                <li><a href="?page=3">3</a></li>
-                <li><a href="?page=4">4</a></li>
-                <li><a href="?page=5">5</a></li>
-                <li><a href="?page=6">6</a></li>
-                <li><a href="?page=7">.....20</a></li>
-                <li class="next"><a href="?page=2">></a></li>                
+                <li><a  class="pages" href="?page=2">2</a></li>
+                <li><a  class="pages" href="?page=3">3</a></li>
+                <li><a  class="pages" href="?page=4">4</a></li>
+                <li><a  class="pages" href="?page=5">5</a></li>
+                <li><a  class="pages" href="?page=6">6.....20</a></li>
+                <li class="next"><a href="?page=2"><i class="fas fa-angle-right"></i></a></li>                
         </ul>
         </div> 
         <a class="viewAll" href="">View All</a>     
@@ -754,7 +766,7 @@
                     </a>
                 </div>
                 <div class="footer_text_text">
-                    <i class="fas fa-greater-than"></i>
+
 
                     <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally
                         syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an

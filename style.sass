@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 $C-pinc: #f16d7f
 
 .body 
@@ -11,6 +13,7 @@ $C-pinc: #f16d7f
     display: flex
     align-items: center
     text-decoration: none
+    margin-left: 0px
 
     .Brand_link 
         text-decoration: none
@@ -43,166 +46,155 @@ header
     justify-content: space-between
     height: 100px
     border-bottom: 1px solid #ececec
-    position: relative
+    position: relative 
 
-    .search 
+    .search
         display: flex
-        border-radius: 3px 3px 3px 3px
+        list-style-type: none
+        padding: 0px
         margin-left: 37px
-        align-items: center
+        margin-right: 350px
 
+        .searchlist:hover .Browse_droplist
+            visibility: visible
+            opacity: 1
+            transition: opacity 4s ease-in
+            transition-duration: .3s
+                          
+        .searchlist:hover
+            box-shadow: 0px 0px 5px -1px #a59494c5
+            z-index: 1
+            
+        .searchlist 
+            border-radius: 3px 3px 3px 3px
+            box-shadow: 0px 0px 0px 0px #ffffffad
+            transition: .4s 
+                   
+            .Browse:hover
+                transition: .3s 
+                color: #f16d7f
 
-    .Browse 
-        height: 38px
-        width: 87px
-        text-decoration: none
-        font-family: 'Lato'
-        font-size: 14px
-        font-weight: 300
-        color: #222222
-        letter-spacing: 0.03em
-        line-height: 37px
-        border: 1px solid #e6e6e6
-        border-radius: 3px 0px 0px 3px
-        background-image: -webkit-linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%)
-        display: block
-        text-align: center
-        position: relative
-        margin-bottom: 20px
-        list-style-type: none
-        padding-left: 0px
-        margin-top: 20px
+            .Browse:after
+                content: '\25BE'
+                display: block
+                margin-left: -10px
+                
+            .Browse
+                display: flex
+                align-items: center
+                justify-content: space-around
+                text-decoration: none
+                width: 87px
+                height: 38px
+                background-color: #cdcdcc
+                background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
+                color: #222222
+                font-family: 'Lato'
+                font-size: 14px
+                font-weight: 300
+                line-height: 32px
+                border: none
+                border-right: 1px solid #e6e6e6
+                border: 1px solid #e6e6e6
+                border-radius: 3px 0px 0px 3px
+                transition: .3s 
+                 
+            .Browse_droplist
+                visibility: hidden
+                list-style-type: none
+                background-color: #ffffff
+                position: absolute
+                z-index: 1
+                padding: 0 13px
+                margin: 0
+                opacity: 0
+                 
+                margin-top: 0px
+                border-radius: 5px
+                border: .5px solid #e6e6e6
+                                
+                .Browse_droplist_elements
+                                 
+                    .Browse_droplist_elements_links:hover
+                        color: $C-pinc
+                    
+                    .Browse_droplist_elements_links
+                        text-decoration: none
+                        display: flex
+                        border-bottom: 1px solid #e8e8e8
+                        width: 236px
+                        color: #232323
+                        font-family: 'Lato'
+                        font-size: 14px
+                        font-weight: bold
+                        line-height: 32px
+                        padding-top: 19px
+                        text-transform: uppercase
+                        transition: .3s
 
+                    .Browse_droplist_elements_list
+                        list-style-type: none
+                        padding: 0
+                        margin: 0
+                        margin-top: 16px
+                        padding-left: 7px
 
-    .Browse_link 
-        color: #222222
+                        .Browse_droplist_elements_list_link:hover
+                            color: $C-pinc
 
+                        .Browse_droplist_elements_list_link
+                            display: block
+                            text-decoration: none
+                            color: #4f4f4f
+                            font-family: 'Lato'
+                            font-size: 14px
+                            font-weight: 400
+                            line-height: 28px
+                            transition: 0.3s
 
-    .Browse>a 
+            .searchlist_input:hover           
 
-    .Browse>li>a 
-        text-decoration: none
-        display: block
+            .searchlist_input
+                width: 257px
+                height: 36px
+                border: 1px solid #e6e6e6
+                background-color: #ffffff
+                outline: none
+                border: none
+                border-right: 1px solid #e6e6e6
+                padding-left: 16px
+                color: #a4a4a4
+                font-family: 'Lato'
+                font-size: 14px
+                font-weight: 300
+                line-height: 32px
+                transform: .3s
+                z-index: 2
+                border: 1px solid #e6e6e6
+                
 
-    .Browse>li>a:after
-        content: '\25BC'
-        font-size: 9px
-        color: #222222
-        font-family: 'arial black'
-        font-weight: bold
-        
+            .searchlist_input::-webkit-input-placeholder 
+                color: #a4a4a4
+                font-family: 'Lato'
+                font-size: 14px
+                font-weight: 300
+                line-height: 32px
 
-    .Browse>li>a:hover 
-        transition: 0.5s
-        box-shadow: 0px 0px 10px 0px #837d7d56
-
-
-    .Browse:hover .Browse_list 
-        display: flex
-
-
-    #BrowseClick:after 
-        display: flex
-
-
-    .Browse_list 
-        display: none
-        flex-direction: column
-        list-style-type: none
-        height: 580px
-        width: 262px
-        background-color: #ffffff
-        border-radius: 5px
-        position: absolute
-        margin-top: 3px
-
-
-    .Browse_list_h 
-        width: 236px
-        display: block
-        font-family: 'Lato'
-        font-size: 14px
-        color: #161616
-        font-weight: bold
-        text-align: left
-        letter-spacing: 0.03em
-        line-height: 32px
-        text-transform: uppercase
-        border-bottom: 1px solid #e8e8e8
-        padding-bottom: 10px
-        margin-top: 15px
-        margin-right: 5px
-        margin-bottom: 10px
-
-
-
-    .Browse_list_a 
-        height: 253px
-        width: 311px
-        font-family: 'Lato'
-        font-size: 14px
-        color: #4f4f4f
-        text-align: left
-        letter-spacing: 0.03em
-        line-height: 28px
-
-
-    .Browse_list_a>a,
-    .Browse_list_h>a 
-        text-decoration: none
-        color: #161616
-        
-
-
-    .Browse_list_a>a:hover,
-    .Browse_list_h>a:hover 
-        color: $C-pinc
-
-
-    .search>input 
-        height: 36px
-        width: 280px
-        background-color: #ffffff
-        border: 1px solid #e6e6e6
-        padding-left: 10px
-        padding-right: 10px
-
-
-    .search>input:focus 
-        transition: 0.5s
-        box-shadow: 0px 0px 10px 0px #837d7d56
-        outline: none
-
-
-
-    .search>.lupa 
-        display: block
-        height: 38px
-        width: 36px
-        background-color: #ffffff
-        border: 1px solid #e6e6e6
-        border-radius: 0px 3px 3px 0px
-
-
-    .search>.lupa>img 
-        display: block
-        margin: auto
-        padding-top: 11px
-
-
-    .search>a:hover 
-        transition: 0.5s
-        box-shadow: 0px 0px 10px 0px #837d7d56
-
-
-    .basket 
-        display: flex
-        flex-direction: column
-        margin-left: 180px
+            .loupe
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 37px
+                height: 38px
+                background-color: #fffdfd;
+                border: 1px solid #e6e6e6
+                border-radius: 0px 3px 3px 0px
 
 
     .basket_ul 
         list-style-type: none
+        padding: 0px
+        
 
 
     .basket_il_drop 
@@ -211,17 +203,24 @@ header
 
 
     .basket:hover .basket_img 
-        transition: 0.5s
+        
         filter: invert(40%)
 
+    .basket_img 
+        transition: 0.5s
 
     .basket:hover .GoToCart 
-        display: flex
+        visibility: visible
+        opacity: 1
+        transition: opacity 3s ease-in
+        transition-duration: .3s
 
 
 
     .GoToCart 
-        display: none
+        visibility: hidden
+        opacity: 0
+        display: flex
         flex-direction: column
         height: 440px
         width: 261px
@@ -232,6 +231,7 @@ header
         margin-left: -40px
         margin-top: 10px
         border-radius: 5px
+        z-index: 1
 
 
     .GoToCart_elements 
@@ -242,13 +242,17 @@ header
         width: 230px
         position: relative
 
+        .GoToCart_elements_img
+            transition: .3s
+            
+
+        .GoToCart_elements_img:hover
+            box-shadow: 0px 1px 2px 0px #222222
 
 
     .GoToCart_elements__cont 
-
         margin-top: 0px
         padding-left: 14px
-
 
 
     .GoToCard_elements_name 
@@ -259,7 +263,10 @@ header
         color: #222222
         text-transform: uppercase
         text-decoration: none
+        transition: .3s
 
+    .GoToCard_elements_name:hover
+        color: $C-pinc
 
 
     .GoToCard_elements_price 
@@ -370,13 +377,14 @@ header
         text-align: center
         margin-top: 10px
         line-height: 50px
+        transition: .3s
 
 
     .GoToCart_buttons:hover 
         border-color: $C-pinc
         color: $C-pinc
         box-shadow: 0px 0px 6px 0px #ef5b70
-        transition: .3s
+        
 
 
     .GoToCart_buttons_link 
@@ -387,26 +395,27 @@ header
         height: 38px
         width: 130px
         background-color: $C-pinc
-        margin-left: 26Px
-        display: block
-
+        margin-left: 26px
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: 0.5s
+        
 
     .button>a 
         display: block
-        font-family: 'Lato'
-        font-size: 15px
         color: #ffffff
-        text-align: right
-        letter-spacing: 0.03em
-        line-height: 40px
+        font-family: 'Lato'
+        font-size: 14px
+        font-weight: 400
+        line-height: 32px
         text-decoration: none
-        text-align: center
+        
 
 
 
 
     .button:hover 
-        transition: 0.5s
         background-color: #f35466
         box-shadow: 0px 0px 2px 0px #000000
 
@@ -435,9 +444,10 @@ header
                 text-transform: uppercase
                 display: block
                 padding: 20px 20px
+                transition: 0.3s
 
             a:hover 
-                transition: 0.1s
+                
                 color: #9c9c9c
                 padding-top: 20px
                 position: relative
@@ -448,38 +458,59 @@ header
                 padding-top: 20px
 
     .menu_list:hover .drop 
-        display: flex
+        visibility: visible
+        opacity: 1
+        transition: opacity 3s ease-in
+        transition-duration: .3s
+        
+        
 
     .drop 
         background-color: #fff
         border-radius: 5px
         padding: 12px 20px
         position: absolute
-        display: none
+        display: flex      
+        opacity: 0
+        visibility: hidden
         z-index: 1
 
         img 
             padding-top: 18px
 
-        .image_box
-            width: 255px
-            height: 118px
-            color: #ffffff
-            font-family: "Lato - Black"
-            font-size: 22px
-            font-weight: 400
-            line-height: 28px;
-            text-transform: uppercase
-            letter-spacing: 0.55px
-            background-image: url(img/collman.png)
-            text-align: end
-            display: flex
-            flex-direction: column-reverse
-            margin-left: -35px
+        
                 
-        .image_link:hover
-            transition: .9s
-            filter: brightness(105%);
+        .image_link:hover 
+            filter: brightness(107%)
+            color: $C-pinc
+
+        .image_link:hover >.image_box 
+            color: $C-pinc
+
+        .image_link
+            transition: .3s
+            filter: brightness(100%)
+
+            .image_box
+                width: 255px
+                height: 118px
+                color: #ffffff
+                font-family: "Lato - Black"
+                font-size: 22px
+                font-weight: 400
+                line-height: 28px
+                text-transform: uppercase
+                letter-spacing: 0.55px
+                background-image: url(img/collman.png)
+                text-align: end
+                display: flex
+                flex-direction: column-reverse
+                margin-left: -35px
+                transition: .3s
+                
+                .Super_sale
+                    padding-bottom: 12px
+                    padding-right: 10px
 
         .drop_flex
             h3 
@@ -509,14 +540,14 @@ header
                     text-decoration: none
                     padding: 8px 0px
                     text-transform: none
+                    transition: 0.3s
                 
                 
                 .drop_a:hover 
-                    transition: 0.3s
                     color: $C-pinc
         
             .drop_flex:not(:last-child) 
-            margin-right: 46px
+                margin-right: 46px
 
 .PromoBox_1 
     display: flex
@@ -527,7 +558,6 @@ header
     background-position-y: -50px
     background-repeat: no-repeat
     margin: auto
-
 
     .PromoText 
         display: block
@@ -590,6 +620,9 @@ header
         transform: scale(1.01)
         box-shadow: 0px 0px 30px 1px #615f5f0e
 
+    .leftBox>a
+        transition: 0.7s
+
 
     .rihhtBox 
         display: flex
@@ -602,6 +635,8 @@ header
         transform: scale(1.01)
         box-shadow: 0px 0px 34px 1px #615f5f4b
 
+    .rihhtBox>a
+        transition: 0.7s
 
     .contentTextBox 
         display: flex
@@ -614,7 +649,6 @@ header
         background-color: #ffffff
         margin-top: 26Px
         padding: 15px
-        /*Text styles for "hOT dEAL" */
         font-family: 'Lato'
         font-size: 18px
         font-weight: 900
@@ -625,7 +659,6 @@ header
 
 
     .redtext 
-        /*Text styles for "FOR MEN" */
         display: flex
         font-family: 'Lato'
         font-size: 30px
@@ -676,30 +709,30 @@ header
         display: flex
         flex-direction: column
         margin-bottom: 31px
-
-
+        transition: 0.3s
 
     .Product:hover 
         box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
-        transition: 0.2s
-
+        
+    .Product_Pic 
+        transition: 0.3s
 
     .Product:hover .Product_Pic 
         filter: brightness(40%) blur(.7px) contrast(80%); 
-        transition: 0.2s
+        
 
 
     .Product:hover .addTo
         display: flex
-        transition: 0.2s
+        
 
     .Product:hover .addTo_like 
         display: flex
-        transition: 0.2s
+        
 
     .Product:hover .addTo_like_2 
         display: flex
-        transition: 0.2s
+        
 
     .addTo 
         position: absolute
@@ -715,6 +748,7 @@ header
         margin-top: 97px
         margin-left: 70px
         text-decoration: none
+        transition: 0.3s
 
 
     .addTo>img 
@@ -726,7 +760,7 @@ header
 
     .addTo:hover 
         box-shadow: 0px 2px 4px 2px #f7f5f5a1
-        transition: 0.2s
+        
 
 
     .addTo_like
@@ -743,6 +777,7 @@ header
         margin-top: 145px
         margin-left: 70px
         text-decoration: none
+        transition: 0.3s
 
     .addTo_like_2
         position: absolute
@@ -758,11 +793,12 @@ header
         margin-top: 145px
         margin-left: 135px
         text-decoration: none
+        transition: 0.3s
         
 
     .addTo_like:hover, .addTo_like_2:hover
         box-shadow: 0px 2px 4px 2px #f7f5f5a1
-        transition: 0.2s
+        
 
     .addTo_like>img
         display: flex
@@ -876,10 +912,9 @@ header
         line-height: 45px
         text-decoration: none
         text-align: center
-
-
-    a:hover 
         transition: 0.5s
+
+    a:hover      
         background-color: #f35466
         box-shadow: 0px 0px 2px 0px #000000
 
@@ -893,10 +928,10 @@ header
     .Link_on_PromoBox_2 
         display: flex
         text-decoration: none
+        transition: 0.5s
 
 
     .Link_on_PromoBox_2:hover 
-        transition: 0.5s
         filter: brightness(115%)
 
 
@@ -1002,7 +1037,6 @@ header
         font-family: Lato
         font-size: 16px
         font-weight: 700
-        /* Text style for "Bin Burhan" */
         font-family: "Lato - Bold"
         font-weight: 700
         letter-spacing: 0.4px
@@ -1080,12 +1114,10 @@ header
 
 
     .Subscribe_right>p 
-        /* Style for "Subscribe" */
         color: #222224
         font-family: Lato
         font-size: 14px
         font-weight: 500
-        /* Text style for "Subscribe" */
         font-size: 24px
         letter-spacing: 0.6px
         line-height: 1px
@@ -1123,7 +1155,6 @@ header
         border: none
         padding-left: 30px
         align-items: center
-        /* Style for "Enter Your" */
         font-weight: bold
         opacity: 0.67
         color: #222224
@@ -1147,21 +1178,19 @@ header
         background-color: $C-pinc
         border: none
         display: block
-        /* Style for "Subscribe" */
         color: #ffffff
         font-family: Lato
         font-size: 14px
         font-weight: 400
         line-height: 54px
-        /* Text style for "Subscribe" */
         letter-spacing: 0.35px
         text-decoration: none
         text-align: center
         line-height: 45px
+        transition: 0.5s
 
 
     .button3:hover 
-        transition: 0.5s
         background-color: #f35466
         box-shadow: 0px 0px 2px 0px #000000
         cursor: pointer
@@ -1189,7 +1218,6 @@ footer
     .footer_text_text 
         width: 427px
         height: 180px
-        /* Style for "Objectivel" */
         color: #898989
         font-family: Lato
         font-size: 14px
@@ -1218,19 +1246,17 @@ footer
 
     .footer_li_1>a 
         text-decoration: none
-        /* Style for "INFORMATIO" */
         color: $C-pinc
         font-family: Lato
         font-size: 18px
         font-weight: 700
         line-height: 26px
         text-transform: uppercase
-        /* Text style for "I, NFORMAT" */
         letter-spacing: 0.45px
+        transition: 0.3s
 
 
     .footer_li_1>a:hover 
-        transition: 0.7s
         color: #898989
 
 
@@ -1250,17 +1276,15 @@ footer
         font-family: Lato
         font-size: 16px
         font-weight: 400
-        /* Text style for "Home" */
         letter-spacing: 0.4px
         line-height: 59px
-        /* Text style for "Shop , Abo" */
         letter-spacing: 0.4px
         line-height: 42px
         text-transform: none
+        transition: 0.3s
 
 
     .footer_li_2>a:hover 
-        transition: 0.7s
         color: $C-pinc
 
 
@@ -1356,8 +1380,6 @@ footer
     .menu_product_nav_list_li>a 
         text-decoration: none
         padding-right: 2px
-
-        /*Text styles for "Home / Men" */
         font-family: 'Lato'
         font-size: 14px
         font-weight: 300
@@ -1371,13 +1393,12 @@ footer
     .menu_product_active>a 
         font-weight: bold
         color: $C-pinc
+        transition: .3s
 
 
     .menu_product_nav_list_li>a:hover 
-        transition: .3s
         color: $C-pinc
-        
-                
+                       
 .contentPage 
     display: flex
     justify-content: space-between
@@ -1403,9 +1424,7 @@ footer
             text-transform: uppercase
             border-left: 5px solid #ef5b70;
             border-bottom: 1px solid #ebebeb;
-               
-
-        input:checked+label,  
+            input: checked+label
             color: #3d7489 
             text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6)  
             font-family: 'Lato';
@@ -1413,11 +1432,12 @@ footer
             font-weight: bold
             color: #ef5b70
             line-height: 25px
-            text-transform: uppercase    
+            text-transform: uppercase 
+            transition: 0.3s   
 
         label:hover
             color: #ef5b70
-            transition: 0.3s
+            
 
         input
             display: none
@@ -1443,10 +1463,11 @@ footer
                     font-size: 14px
                     color: #6f6e6e
                     line-height: 33px 
+                    transition: 0.3s
 
                 a:hover 
                     color: #ef5b70
-                    transition: 0.3s
+                    
         
            
     .contantPage_Filters_and_Products
@@ -1533,10 +1554,10 @@ footer
                             margin: 2px     
                             display: flex
                             flex-wrap: nowrap   
+                            transition: 0.4s 
 
                         .check:hover
                             background-color: #ddd7d777     
-                            transition: 0.4s 
                             cursor: pointer                      
   
                         input 
@@ -1628,10 +1649,11 @@ footer
                         font-size: 14px;
                         color: #6f6e6e;
                         border-right: 1px solid #6f6e6e77
+                        transition: 0.3s
                         
                     .SortBy_link:hover
-                         color: $C-pinc
-                         transition: 0.3s
+                        color: $C-pinc
+                        
 
                     select   
                         display: block
@@ -1647,9 +1669,9 @@ footer
                         color: #6f6e6e
                         line-height: 26px
                         padding: 5px
-
-                    select:hover 
                         transition: 0.3s
+
+                    select:hover           
                         color: $C-pinc
                         outline: none
                     
@@ -1667,12 +1689,11 @@ footer
                          
 
                         option                            
-                             background-color: #d1cbcb2d
+                            background-color: #d1cbcb2d
 
         .pagination_and_botton
             display: flex
             justify-content: space-between
-
 
             .pagination
                 width: 261px
@@ -1700,6 +1721,13 @@ footer
                         font-size: 11px
                         list-style: none
                         color: #c4c4c4
+
+                        .pages
+                            color: #c4c4c4
+                            font-family: 'Lato'
+                            font-size: 16px
+                            font-weight: bold
+                            line-height: 26px
                         
                     
                         a:link, a:visited
@@ -1707,13 +1735,16 @@ footer
                             font-size: 16px
                             font-weight: bold
                             line-height: 26p
-                            color:#c4c4c4
+                            color: #c4c4c4
                             display: block
                             padding: 3px 6px
                             margin-right: 5px
 
                         a:hover
                             color: $C-pinc
+                            
+
+                        a
                             transition: 0.3s
 
                                         
@@ -1721,13 +1752,12 @@ footer
                         display: block
                         float: left
                         font-weight: bold
-                        padding: 3px 4px
+                        padding: 0px 
                                     
                     .next a, .previous-off a 
                         font-weight: bold
                         color: #c4c4c4
-                        width: 20px
-                        height: 20px
+                  
                         line-height: 18px
                         font-weight: 3000
                         font-family: 'tahoma'        
@@ -1755,10 +1785,11 @@ footer
                 text-decoration: none
                 text-align: center
                 line-height: 40px
+                transition: .3s
 
             .viewAll:hover
                 box-shadow: 0px 0px 6px 0px #ef5b70
-                transition: .3s
+                
                                                                                 
 .PromoBox_2_productpage 
     width: 1600px
@@ -1808,12 +1839,12 @@ footer
         
 
         #slider 
-        	width: 1607px
+            width: 1607px
             height: 777px
 
         .slide
-        	width: 100%
-        	height: 100%
+            width: 100%
+            height: 100%
             margin: 0px auto
             
     .slider_preview_next
@@ -1825,10 +1856,12 @@ footer
         display: flex
         justify-content: space-between
 
-        a:hover 
-            transition: 0.5s
+        a:hover            
             background-color: #f35466
             box-shadow: 0px 0px 3px 0px #000000
+
+        a
+            transition: 0.5s
 
         .preview, .next
             width: 47px 
@@ -1842,7 +1875,7 @@ footer
                 filter: invert(100%)
 
 .Single_page_content
-    height: 1289px
+    height: 650px
     width: 1607px
     margin: 0px auto
     display: flex
@@ -1969,8 +2002,7 @@ footer
                 font-size: 24px;
                 font-weight: 700;
                 line-height: 24px;
-    
-    
+      
         .SP_Product_discription_botton
             display: flex
             flex-direction: column
@@ -2043,9 +2075,589 @@ footer
                 font-weight: 700
                 justify-content: center
                 align-items: center
+                transition: .3s
 
             a:hover
                 border-color: $C-pinc
                 color: $C-pinc
                 box-shadow: 0px 0px 6px 0px #ef5b70
+                
+
+.you_may
+    text-align: center
+    color: #4d4d4d
+    font-family: "Lato - Black"
+    font-size: 24px
+    font-weight: 900
+    line-height: 20px
+    text-transform: uppercase
+    margin-top: 120px
+    margin-bottom: 72px
+
+.Single_page_product        
+    height: 508px
+
+
+/* ------------------------Cтраница Shoping cart------------------------- */
+
+
+.SC_product_box 
+    display: flex
+    
+
+    .SC_product_list
+        list-style-type: none
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        
+       
+        .SC_product_list_item
+            display: flex
+            max-width: 1140px
+            min-width: 200px
+            align-items: center
+            flex-wrap: wrap
+            padding: 25px 0px 
+            border-bottom: 1px solid #eaeaea;
+            
+            .SC_price
+                padding-left: 250px
+                color: #656565;
+                font-family: Lato;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 20px;
+
+            .SC_quantity
+                width: 54px
+                height: 30px
+                border: 1px solid #eaeaea
+                background-color: #ffffff
+                margin-left: 120px
+                text-align: center
+
+            .SC_shipping
+                margin-left: 90px
+                color: #656565;
+                font-family: Lato;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 20px;
+                text-transform: uppercase;
+
+            .SC_subtotal
+                margin-left: 110px
+                color: #656565
+                font-family: 'Lato'
+                font-size: 13px
+                font-weight: 400
+                line-height: 20px
+
+            .fa-times-circle:hover
+                color: #8d8585
+
+            .fa-times-circle
+                margin-left: 80px
+                text-decoration: none
+                display: block
+                color: #c0c0c0
+                font-size: 16px
+                font-weight: 400
+                text-transform: uppercase
                 transition: .3s
+
+            .SC_product
+                display: flex
+                width: 278px
+                flex-wrap: nowrap
+
+                .SC_product_pic:hover
+                    box-shadow: 0px 0px 5px 0px #635d5d8a 
+
+                .SC_product_pic
+                    margin-right: 21px
+                    width: 100px
+                    height: 115px
+                    transition: .3s
+
+                .SG_product_discription_name:hover
+                    color: $C-pinc
+
+                .SG_product_discription_name
+                    text-decoration: none
+                    width: 157px
+                    height: 11px
+                    color: #222222
+                    font-family: 'Lato'
+                    font-size: 13px
+                    font-weight: 400
+                    text-transform: uppercase
+                    transition: .3s
+
+                .product_discription_color, .SG_product_discription_size
+                    color: #575757
+                    font-family: "Lato - Regular"
+                    font-weight: bold
+                    font-size: 13px
+                    line-height: 20px
+
+                    .colorere_text, .size_text
+                        font-family: "Lato Light"
+                        font-weight: 300
+            
+            .SC_columns_details, .SC_columns_unite, .SC_columns_quantity, .SC_columns_shipping, .SC_columns_subtotal, .SC_columns_action
+                color: #222222
+                font-family: 'Lato'
+                font-size: 13px
+                font-weight: 700
+                line-height: 20px
+                text-transform: uppercase
+
+            .SC_columns_details              
+            .SC_columns_unite
+                margin-left: 390px
+            .SC_columns_quantity
+                margin-left: 90px
+            .SC_columns_shipping
+                margin-left: 70px
+            .SC_columns_subtotal
+                margin-left: 75px
+            .SC_columns_action
+                margin-left: 45px
+
+.SC_product_box_bottons 
+    display: flex
+    justify-content: space-between
+    margin-top: 44px
+    margin-bottom: 63px
+    
+    .clear:hover, .continue:hover
+        border-color: $C-pinc
+        color: $C-pinc
+        box-shadow: 0px 0px 6px 0px #ef5b70
+
+    .clear, .continue
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 235px;
+        height: 50px;
+        text-decoration: none
+        border: 1px solid #eaeaea
+        background-color: #ffffff
+        color: #4a4a4a
+        font-family: 'Lato'
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        transition: .3s
+
+.SC_form_and_total
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 79px
+
+    .SC_form
+        display: flex
+        justify-content: space-between
+        width: 745px
+        min-width: 300px
+        flex-wrap: wrap
+       
+        .shoping_adress
+                color: #222222
+                font-family: Lato
+                font-size: 16px
+                font-weight: 700
+                text-transform: uppercase
+                margin-bottom: 22px
+
+        .State_and_postcode
+                width: 335px;
+                height: 41px
+                border: 1px solid #eaeaea
+                background-color: #ffffff
+                color: #b1b1b1
+                font-family: Lato
+                font-size: 13px
+                font-weight: 300
+                padding-left: 18px
+                margin-bottom: 20px
+                outline-color: $C-pinc
+
+        .SC_shoping_adress
+            display: flex
+            flex-direction: column
+
+
+            .country
+                width: 356px
+                height: 50px
+                border: 1px solid #eaeaea
+                background-color: #ffffff
+                color: #b1b1b1
+                font-family: Lato
+                font-size: 13px
+                font-weight: 300
+                padding-left: 18px
+                margin-bottom: 20px
+                outline-color: $C-pinc
+
+                option
+                    color: #b1b1b1
+                    font-family: Lato
+                    font-size: 13px
+                    font-weight: 300
+                    padding-left: 18px
+           
+
+            .State_and_postcode::-webkit-input-placeholder 
+                color: #b1b1b1
+                font-family: Lato
+                font-size: 13px
+                font-weight: 300
+                padding-left: 5px
+
+        .SC_shopping_adres_botton:hover
+            border-color: $C-pinc
+            color: $C-pinc
+            box-shadow: 0px 0px 6px 0px #ef5b70
+            
+        .SC_shopping_adres_botton
+            display: flex
+            align-items: center
+            justify-content: center
+            text-decoration: none
+            width: 100px
+            height: 35px
+            border: 1px solid #eaeaea
+            background-color: #ffffff
+            color: #4a4a4a
+            font-family: 'Lato'
+            font-size: 11px
+            font-weight: bold
+            text-transform: uppercase
+            transition: .3s
+            margin-top: 3px
+        
+        .SC_cupon_discount
+            
+
+            h4
+                color: #000000;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 300;
+
+            .apply
+                width: 118px
+            
+    .SC_total
+        width: 272px
+        height: 130px
+        background-color: #f5f3f3
+        padding: 42px 44px
+        display: flex
+        flex-direction: column
+
+        .subtotal
+            color: #4a4a4a
+            font-family: Lato
+            font-size: 11px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: right
+            margin: 0px
+
+            &_price
+                margin-left: 20px
+        
+        .grandtotal
+            color: #222222
+            font-family: Lato
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            text-align: right
+            margin: 0px 0px
+            padding: 14px 0
+            border-bottom: 1px solid  #e2e2e2;
+
+            &_price
+                margin-left: 10px
+
+        .total_bottom:hover        
+            background-color: #f35466
+            box-shadow: 0px 1px 2px 0px #000000
+
+        .total_bottom
+            width: 273px
+            height: 50px
+            background-color: #f16d7f
+            display: flex
+            align-items: center
+            justify-content: center
+            text-decoration: none
+            color: #ffffff
+            font-family: Lato
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            margin-top: 17px
+            transition: 0.5s
+
+
+
+/* ------------------------Cтраница Chekout------------------------- */            
+
+.checoutcontent 
+    margin-bottom: 93px
+
+.chekout_ac
+    width: 1140px 
+    margin-top: 90px
+    
+    .top_label 
+        display: flex
+        flex-direction: row
+        width: 1105px
+        height: 30px 
+        cursor: pointer 
+        // для текста
+        color: #222222
+        font-family: Lato
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 33px 0px 
+        
+
+    .top_label:hover
+        color: #ef5b70
+        
+    .top_input
+        display: none
+
+    .top_input:checked ~ article
+        transition: height 0.6s ease-in-out, box-shadow 0.6s linear
+        height: 460px
+
+    article
+        display: flex   
+        overflow: hidden
+        position: releative
+        z-index: 10
+        height: 0px
+        transition: height 0.6s ease-in-out, box-shadow 0.6s linear
+        border-bottom: 1px solid #ebebeb
+
+    .Chekaut_ac_left_h3
+        color: #222222
+        font-family: 'Lato'
+        font-size: 13px
+        font-weight: 600
+        text-transform: uppercase
+        margin: 0px
+        margin-bottom: 15px
+
+    .Chekaut_ac_p1
+        color: #b3b2b2
+        font-family: 'Lato'
+        font-size: 13px
+        font-weight: 400
+        line-height: 20px
+        margin: 0px
+        margin-bottom: 15px
+
+    .Chekaut_ac_p2
+        margin-top: 18px
+        line-height: 27px
+    
+    
+    .Chekaut_ac_left
+        margin-top: 39px
+        margin-left: 35px
+        margin-right: 350px
+      
+        .Chekout_radio
+            margin-top: 34px
+            margin-bottom: 34px
+            .radio
+                border: none
+                margin-bottom: 20Px
+
+                label
+                    border: none
+                    color: #222222
+                    font-family: 'Lato'
+                    font-size: 12px
+                    font-weight: 400
+                    text-transform: uppercase
+                    margin: 0
+                    padding: 0
+
+                .custom-radio 
+                    position: absolute
+                    z-index: -1
+                    opacity: 0
+                    
+
+                .custom-radio+label 
+                    display: inline-flex
+                    align-items: center
+                    user-select: none
+
+                .custom-radio+label::before 
+                    content: ''
+                    display: inline-block
+                    width: 9px
+                    height: 9px
+                    flex-shrink: 0
+                    flex-grow: 0
+                    border: 2px solid #555555
+                    border-radius: 50%
+                    margin-right: 0.5em
+                    background-repeat: no-repeat
+                    background-position: center center
+                    background-size: 50% 50%
+
+                .custom-radio:not(:disabled):not(:checked), label:hover::before 
+                    border-color: $C-pinc
+                    cursor: pointer
+
+                .custom-radio:not(:disabled):active, label::before 
+                    background-color: #ffffff
+                    border-color: #000000
+
+                .custom-radio:focus:not(:checked), label::before 
+                    border-color: #80bdff
+
+                .custom-radio:checked+label::before 
+                    border-color: #ffffff;
+                    background-color: #000000
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e")
+                    
+                    filter: invert(100%)
+
+                .custom-radio:checked+.label::before
+                    background-color: #000000 
+
+                .custom-radio:disabled+label::before 
+                    background-color: #e9ecef
+  
+        .Chekout_botton
+            color: #4a4a4a
+            font-family: 'Lato'
+            font-size: 14px
+            font-weight: 700
+            text-transform: uppercase
+            width: 180px
+            height: 50px
+            border: 1px solid #eaeaea
+            background-color: #ffffff
+            display: flex
+            align-items: center
+            justify-content: center
+            text-decoration: none
+            margin-top: 35px
+            transition: .3s
+
+        .Chekout_botton:hover
+            border-color: $C-pinc
+            color: $C-pinc
+            box-shadow: 0px 0px 6px 0px #ef5b70
+
+    .Chekout_ac_right
+        margin-top: 39px
+        .avtorisation
+            margin-top: 27px
+
+        .Checout_input_h
+            color: #222222
+            font-family: 'Lato'
+            font-size: 12px
+            font-weight: 600
+            line-height: 20px
+            text-transform: uppercase
+            margin: 0px
+            margin-bottom: 16px
+
+            .star
+                color: #ff0d0d
+                font-family: Lato
+                font-size: 17px
+                font-weight: 600
+                line-height: 20px
+
+        .validation
+            color: #ff0d0d
+            font-family: Lato
+            font-size: 13px
+            font-weight: 600
+            line-height: 20px
+            margin: 0px
+            margin-top: 22px
+             
+        .avtorisation
+            .Chekout_input 
+                display: block
+                width: 375px
+                height: 41px
+                border: 1px solid #eaeaea
+                background-color: #ffffff
+                margin: 0px
+                margin-bottom: 16px
+                outline-color: $C-pinc
+                padding-left: 10px
+
+            .forgot_pass
+                margin: 0
+                display: flex
+                flex-direction: row
+                align-items: center
+                margin-top: 30px
+                margin-bottom: 78px
+               
+                .forgot_pass_link              
+                    color: #222222
+                    font-family: 'Lato'
+                    font-size: 14px
+                    font-weight: bold
+                    line-height: 20px
+                    text-decoration: none
+                    padding-left: 32px
+                    transition: .3s
+                    
+
+                .forgot_pass_link:hover
+                    color: $C-pinc
+
+            .Chekout_submit
+                width: 114px
+                height: 46px
+                cursor: pointer
+                background-color: $C-pinc
+                border: none
+                display: block
+                width: 180px
+                height: 50px
+                border: 1px solid #eaeaea
+                background-color: #ffffff
+                color: #4a4a4a
+                font-family: 'Lato'
+                font-size: 14px
+                font-weight: 700
+                text-transform: uppercase
+                transition: .3s
+              
+
+            .Chekout_submit:hover
+                border-color: $C-pinc
+                color: $C-pinc
+                box-shadow: 0px 0px 6px 0px #ef5b70
+
+
+        
+       
