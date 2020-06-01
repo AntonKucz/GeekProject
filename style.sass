@@ -36,7 +36,6 @@ $C-pinc: #f16d7f
         font-weight: 900
         color: rgba(241, 109, 127, 1)
         text-align: center
-        letter-spacing: 0.03em
         line-height: 32px
         text-transform: uppercase
 
@@ -52,8 +51,8 @@ header
         display: flex
         list-style-type: none
         padding: 0px
-        margin-left: 37px
-        margin-right: 350px
+        margin-left: 35px
+        margin-right: 349px
 
         .searchlist:hover .Browse_droplist
             visibility: visible
@@ -62,13 +61,13 @@ header
             transition-duration: .3s
                           
         .searchlist:hover
-            box-shadow: 0px 0px 5px -1px #a59494c5
+            box-shadow: 0px 1px 4px -1px #a59494c5
             z-index: 1
             
         .searchlist 
             border-radius: 3px 3px 3px 3px
             box-shadow: 0px 0px 0px 0px #ffffffad
-            transition: .4s 
+            transition: .3s 
                    
             .Browse:hover
                 transition: .3s 
@@ -84,8 +83,8 @@ header
                 align-items: center
                 justify-content: space-around
                 text-decoration: none
-                width: 87px
-                height: 38px
+                width: 86px
+                height: 36px
                 background-color: #cdcdcc
                 background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
                 color: #222222
@@ -98,6 +97,7 @@ header
                 border: 1px solid #e6e6e6
                 border-radius: 3px 0px 0px 3px
                 transition: .3s 
+                border-right: none
                  
             .Browse_droplist
                 visibility: hidden
@@ -108,10 +108,9 @@ header
                 padding: 0 13px
                 margin: 0
                 opacity: 0
-                 
                 margin-top: 0px
                 border-radius: 5px
-                border: .5px solid #e6e6e6
+                border: 0.5px solid #e6e6e6
                                 
                 .Browse_droplist_elements
                                  
@@ -155,21 +154,17 @@ header
             .searchlist_input:hover           
 
             .searchlist_input
-                width: 257px
-                height: 36px
-                border: 1px solid #e6e6e6
+                width: 246px
+                height: 34px
                 background-color: #ffffff
                 outline: none
-                border: none
-                border-right: 1px solid #e6e6e6
                 padding-left: 16px
                 color: #a4a4a4
                 font-family: 'Lato'
                 font-size: 14px
+                padding-right: 16px
                 font-weight: 300
                 line-height: 32px
-                transform: .3s
-                z-index: 2
                 border: 1px solid #e6e6e6
                 
 
@@ -184,23 +179,26 @@ header
                 display: flex
                 align-items: center
                 justify-content: center
-                width: 37px
-                height: 38px
+                width: 35px
+                height: 36px
                 background-color: #fffdfd;
                 border: 1px solid #e6e6e6
                 border-radius: 0px 3px 3px 0px
+                border-left: none
 
 
     .basket_ul 
         list-style-type: none
         padding: 0px
+
+        .basket_ul_li
+            height: 29px
+            width: 32px
+
         
-
-
     .basket_il_drop 
         list-style-type: none
         position: relative
-
 
     .basket:hover .basket_img 
         
@@ -214,8 +212,6 @@ header
         opacity: 1
         transition: opacity 3s ease-in
         transition-duration: .3s
-
-
 
     .GoToCart 
         visibility: hidden
@@ -247,7 +243,7 @@ header
             
 
         .GoToCart_elements_img:hover
-            box-shadow: 0px 1px 2px 0px #222222
+            box-shadow: 0px 1px 3px 0px #7e7a7a54
 
 
     .GoToCart_elements__cont 
@@ -292,6 +288,7 @@ header
         position: absolute
         margin-top: 30px
         margin-left: 130px
+        transition: .4s
 
 
     .cross:hover .fa-times-circle 
@@ -392,11 +389,12 @@ header
 
 
     .button 
-        height: 38px
+        min-height: 38px
         width: 130px
         background-color: $C-pinc
-        margin-left: 26px
+        margin-left: 24px
         display: flex
+        flex: wrap
         align-items: center
         justify-content: center
         transition: 0.5s
@@ -425,12 +423,13 @@ header
 .menu 
     margin-left: 240px
     border-bottom: #9f9f9f
-    margin-bottom: -16px   
+
 
     .menu_list 
         display: flex
         flex-wrap: wrap
-        list-style-type: none    
+        list-style-type: none   
+        margin: 0px 
         
         .menu_elements 
 
@@ -440,22 +439,22 @@ header
                 font-size: 14px
                 font-weight: bold
                 color: #222222
-                line-height: 26px
+                line-height: 10px
                 text-transform: uppercase
                 display: block
-                padding: 20px 20px
+                padding: 0px 20px
                 transition: 0.3s
-
-            a:hover 
+                padding-top: 19px
+                padding-bottom: 18px
+                border-bottom: 4px solid #ffffff
                 
-                color: #9c9c9c
-                padding-top: 20px
-                position: relative
 
+            a:hover            
+                color: #9c9c9c
+                position: relative
 
             .menu_active_link 
                 border-bottom: 4px solid #f35466
-                padding-top: 20px
 
     .menu_list:hover .drop 
         visibility: visible
@@ -463,8 +462,6 @@ header
         transition: opacity 3s ease-in
         transition-duration: .3s
         
-        
-
     .drop 
         background-color: #fff
         border-radius: 5px
@@ -1348,9 +1345,7 @@ footer
         transition: 0.9s
         color: rgb(224, 160, 160)
 
-
 /* ------------------------Cтраница PROduct------------------------ */
-
 
 .menu_product 
     
@@ -1789,8 +1784,7 @@ footer
 
             .viewAll:hover
                 box-shadow: 0px 0px 6px 0px #ef5b70
-                
-                                                                                
+                                                                              
 .PromoBox_2_productpage 
     width: 1600px
     margin: auto
@@ -1819,10 +1813,8 @@ footer
                 padding-right: 32px
                 padding-left: 32px
        
-
 /* ------------------------Cтраница Single Page------------------------- */
     
-
 .Single_page_Slider
     width: 1607px
     height: 777px
@@ -2082,7 +2074,6 @@ footer
                 color: $C-pinc
                 box-shadow: 0px 0px 6px 0px #ef5b70
                 
-
 .you_may
     text-align: center
     color: #4d4d4d
@@ -2097,9 +2088,7 @@ footer
 .Single_page_product        
     height: 508px
 
-
 /* ------------------------Cтраница Shoping cart------------------------- */
-
 
 .SC_product_box 
     display: flex
@@ -2136,6 +2125,8 @@ footer
                 background-color: #ffffff
                 margin-left: 120px
                 text-align: center
+                outline-color: $C-pinc
+
 
             .SC_shipping
                 margin-left: 90px
@@ -2213,6 +2204,7 @@ footer
                 font-weight: 700
                 line-height: 20px
                 text-transform: uppercase
+                
 
             .SC_columns_details              
             .SC_columns_unite
@@ -2407,8 +2399,6 @@ footer
             text-transform: uppercase
             margin-top: 17px
             transition: 0.5s
-
-
 
 /* ------------------------Cтраница Chekout------------------------- */            
 
